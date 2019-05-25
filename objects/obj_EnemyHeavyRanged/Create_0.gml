@@ -5,6 +5,7 @@ event_inherited();
 HP = 100;
 enemySpeed = 3;
 attackRate = 90;
+collisionDamage = 10;
 damage = 40;
 manaReward = 80;
 finalStunDuration = 150;

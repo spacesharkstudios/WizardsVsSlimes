@@ -1,10 +1,16 @@
 spd = 20;
 myFacing = 1;
 existance = 0;
-damage = obj_EnemyLightRanged.damage;
-set = false;
+damage = 10;
 
 
+
+if(myFacing == 1){
+	image_xscale = 1;
+}
+else{
+	image_xscale = -1;
+}
 
 
 

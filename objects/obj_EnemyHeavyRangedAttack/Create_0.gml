@@ -1,6 +1,14 @@
 spd = 20;
-myFacing = obj_EnemyHeavyRanged.facing;
+myFacing = 1;
 existance = 0;
-damage = obj_EnemyHeavyRanged.damage;
-set = false;
+
+if(obj_EnemyHeavyRanged.facing == -1){
+	image_xscale = 1;
+	myFacing = 1;
+}
+else{
+	image_xscale = -1;
+	myFacing = -1;
+}
+
 

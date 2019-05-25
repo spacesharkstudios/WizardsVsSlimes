@@ -3,7 +3,8 @@
 		if(obj_Boss1.attackStateCounter < 200){
 			
 			if(obj_Boss1.bigAttackCounter >= obj_Boss1.bigAttackCooldown){
-				instance_create_layer(x, y, "instances", obj_BigBossAttack);
+				bullet = instance_create_layer(x, y, "instances", obj_BigBossAttack);
+				bullet.myFacing = facing;
 				obj_Boss1.bigAttackCounter = 0;
 			}
 			
@@ -12,9 +13,9 @@
 			
 			
 			if(obj_Boss1.lightAttackCounter >= obj_Boss1.lightAttackCooldown){
-					instance_create_layer(x, y, "instances", obj_lightBossAttack);
+					bullet = instance_create_layer(x, y, "instances", obj_EnemyLightRangedAttack);
+					bullet.myFacing = facing;
 					obj_Boss1.lightAttackCounter = 0;
-					//obj_Boss1.lightAttackCounter2++;
 			}
 		}
 		else{
@@ -34,7 +35,8 @@
 		if(obj_Boss1.attackStateCounter < 200){
 			
 			if(obj_Boss1.bigAttackCounter >= obj_Boss1.bigAttackCooldown){
-				instance_create_layer(x, y, "instances", obj_BigBossAttack);
+				bullet = instance_create_layer(x, y, "instances", obj_BigBossAttack);
+				bullet.myFacing = facing;
 				obj_Boss1.bigAttackCounter = 0;
 			}
 			
@@ -43,7 +45,8 @@
 			
 			
 			if(obj_Boss1.lightAttackCounter >= obj_Boss1.lightAttackCooldown){
-					instance_create_layer(x, y, "instances", obj_lightBossAttack);
+					bullet = instance_create_layer(x, y, "instances", obj_EnemyLightRangedAttack);
+					bullet.myFacing = facing;
 					obj_Boss1.lightAttackCounter = 0;
 					//obj_Boss1.lightAttackCounter2++;
 			}

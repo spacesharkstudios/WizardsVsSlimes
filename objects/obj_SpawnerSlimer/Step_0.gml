@@ -88,6 +88,10 @@ if (active) {
 		}
 	}
 	
+	// handles player collison
+	if(place_meeting(x, y, obj_Players)){
+		scr_DamagePlayer(true, damage);
+	}
 
 	// handles death
 	if (HP <= 0 && instance_exists(obj_Players)) {

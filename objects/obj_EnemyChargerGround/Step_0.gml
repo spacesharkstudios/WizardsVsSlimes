@@ -7,7 +7,7 @@ if (active) {
 			sprite_index = spr_SlimeCharger_FullAssSprint;
 			stunCooldown++;
 			
-			if (distance_to_object(obj_Players) < 20) {
+			if (distance_to_object(obj_Players) < 1) {
 				move = 0;
 				gotThere = true;
 			} else if (x > obj_Players.x) {
@@ -18,10 +18,7 @@ if (active) {
 				gotThere = false;
 			}
 			
-			if (gotThere && attackCooldown >= 80) {
-				instance_create_layer(x + sign(obj_Players.x - x) * 64, y, "instances", obj_EnemyChargerAttack);
-				attackCooldown = 0;
-			}
+			
 		} else {
 			sprite_index = spr_SlimeCharger_Idle;
 			if (myStunDuration < finalStunDuration) {
@@ -61,6 +58,13 @@ if (active) {
 		image_xscale = 1;
 		facing = -1;
 	}
+	
+	
+	// handles player collison
+	if(place_meeting(x, y, obj_Players)){
+		scr_DamagePlayer(true, damage);
+	}
+	
 
 	// handles death
 	if (HP <= 0 && instance_exists(obj_Players)) {

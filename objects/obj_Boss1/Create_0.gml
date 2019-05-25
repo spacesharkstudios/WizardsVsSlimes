@@ -5,7 +5,7 @@ event_inherited();
 HP = 2000;
 enemySpeed = 3;
 attackRate = 90;
-damage = 10;
+collisionDamage = 10;
 manaReward = 40;
 finalStunDuration = 150;
 
@@ -38,7 +38,6 @@ attackStateCounter = 0;
 
 lightAttackCooldown = 10;
 lightAttackCounter = 0;
-lightAttackCounter2 = 0;
 lightAttackDamage = 10;
 lightAttackState = false;
 

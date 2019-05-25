@@ -22,7 +22,6 @@ specialAttackCost = 15;
 countingN = 0;
 
 basicAttackDamage = 20;
-damageTaken = 0;
 shiftState = false;
 passiveCooldown = 0;
 
