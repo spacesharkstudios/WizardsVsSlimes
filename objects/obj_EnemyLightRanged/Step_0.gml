@@ -42,13 +42,27 @@ if (active) {
 		}
 	
 		// Attacks player
-		if ((gotThere) && (attackCooldown >= attackRate)) {
+		if ((gotThere) && (attackCooldown >= attackRate1) && (!burstFirePause)) {
 			
 			bullet = instance_create_layer(x, y, "instances", obj_EnemyLightRangedAttack);
 			bullet.myFacing = facing;
-			
+			burstFire++;
 			attackCooldown = 0;
+			
+			if(burstFire >= 3){
+				burstFirePause = true;
+				attackCooldown2 = 0;
+			}
 		}
+		
+		if(burstFirePause){
+			attackCooldown2++;
+			if(attackCooldown2 > attackRate2){
+				burstFirePause = false;
+				burstFire = 0;
+			}
+		}
+
 	
 		// falling & knockback physics
 		event_inherited()

@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "0fb36b18-3515-469d-9a13-1a8fbe4fbbb6",
+            "Value": {
+                "id": "0ad2cdfc-b904-4d00-9fd4-a60f40b7945a",
+                "resourcePath": "scripts\\scr_Collision\\scr_Collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "108dd006-0660-489c-ba1c-7e19ff842127",
             "Value": {
                 "id": "e1a2db19-3a5e-49e3-b5f0-fab6a81980cc",
@@ -196,14 +204,6 @@
                 "id": "55647e7d-047d-41d0-afd7-275de5c4dd67",
                 "resourcePath": "views\\19ad886c-1b63-4a71-abe0-468ceb48606a.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "1a26a33d-8360-4274-8ab5-55cf7ece2cf8",
-            "Value": {
-                "id": "dc752167-4a12-476a-adcb-47e78c6bc079",
-                "resourcePath": "sprites\\spr_PlayerAir_Attack\\spr_PlayerAir_Attack.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -283,14 +283,6 @@
             "Value": {
                 "id": "23d2e9da-ec44-4133-9583-8228b001e594",
                 "resourcePath": "sprites\\spr_PlayerWater_Idle\\spr_PlayerWater_Idle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2aa9269f-e39e-4446-9df6-0e0db9ad3c81",
-            "Value": {
-                "id": "3a57d689-e9f7-4bce-bcc4-137b1e175a4b",
-                "resourcePath": "sprites\\spr_PlayerFire_Attack\\spr_PlayerFire_Attack.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -596,6 +588,14 @@
                 "id": "76177d14-7192-4ed4-9265-99edf1170e91",
                 "resourcePath": "sprites\\spr_FireSpecialBall\\spr_FireSpecialBall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "69a8dd54-9d87-4b0a-abb9-fe822b340687",
+            "Value": {
+                "id": "cdceb4e3-5884-4622-b7da-0349811d1548",
+                "resourcePath": "objects\\obj_HitEffect\\obj_HitEffect.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1470,7 +1470,8 @@
         "5c09b9fd-b237-4a2c-9145-47e23943ee72",
         "abdd3b23-3306-473e-b32a-4632a22d08ba",
         "e25fa086-4a08-4d37-8fb9-2bb2315157e5",
-        "a8d1cd61-3fe8-4b14-8ad6-4adec96d5611"
+        "a8d1cd61-3fe8-4b14-8ad6-4adec96d5611",
+        "0fb36b18-3515-469d-9a13-1a8fbe4fbbb6"
     ],
     "tutorial": ""
 }

@@ -86,7 +86,7 @@ if (active) {
 	}
 	
 	// handles player collison
-	if(place_meeting(x, y, obj_Players)){
+	if(place_meeting(x, y + 5, obj_Players)){
 		scr_DamagePlayer(true, collisionDamage);
 	}
 	

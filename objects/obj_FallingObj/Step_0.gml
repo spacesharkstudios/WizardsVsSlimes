@@ -13,4 +13,12 @@ if (place_meeting(x, y + vertical, obj_Wall)) {
 	jumped = false;
 	knockback = 0;
 }
+else if(!place_free(x, y + vertical)){
+		while (place_free(x, y + sign(vertical))) {
+		y += sign(vertical);
+	}
+	vertical = 0;
+	jumped = false;
+	knockback = 0;
+}
 y += vertical;

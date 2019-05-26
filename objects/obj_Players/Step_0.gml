@@ -1,7 +1,8 @@
 // controls
+
 var input_left = keyboard_check(ord("A"));
 var input_right = keyboard_check(ord("D"));
-var input_jump = (keyboard_check_pressed(vk_space) ||  keyboard_check_pressed(ord("W")));
+var input_jump = (keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W")));
 var input_change1 = keyboard_check_pressed(ord("1"));
 var input_change2 = keyboard_check_pressed(ord("2"));
 var input_change3 = keyboard_check_pressed(ord("3"));
@@ -9,20 +10,32 @@ var input_change4 = keyboard_check_pressed(ord("4"));
 var attack = keyboard_check_pressed(ord("O"));
 var specialAttack = keyboard_check_pressed(ord("P"));
 
+
 var move = input_right - input_left;
 horizontal = move * playerSpeed;
-
 event_inherited()
 
 // horizontal movement
+if(!instance_exists(obj_BasicAttack)){
+
 if (place_meeting(x + horizontal, y, obj_Wall)) {
 	while (!place_meeting(x + sign(horizontal), y, obj_Wall)) {
 		x += sign(horizontal);
 	}
 	knockback = 0;
-} else {
+}
+else if(!place_free(x + horizontal, y)){
+	while (place_free(x + sign(horizontal), y)) {
+		x += sign(horizontal);
+	} 
+	knockback = 0;
+}
+else {
 	x += horizontal;
 }
+
+}
+
 
 // jumping
 var onGround = place_meeting(x, y + 1, obj_Wall);
@@ -31,7 +44,7 @@ if (!doubleJump) {
 } else if (onGround) {
 	hasDoubleJump = true;
 }
-if (input_jump && (onGround || (hasDoubleJump && manaPoints >= doubleJumpCost))) {
+if (input_jump && (onGround || (hasDoubleJump && manaPoints >= doubleJumpCost)) && (!instance_exists(obj_BasicAttack))) {
 	scr_PlayAudio(sfx_player_jump);
 	vertical = -30;
 	jumped = true;
@@ -117,6 +130,9 @@ if (state == 1) {
 
 // handles basic attacks
 if ((basicAttackCooldown <= 0) && (attack)) {
+	input_left = false;
+	input_right = false;
+	input_jump = false;
 	basicAttackCooldown = 10;
 	
 	if (facing == 1) {
