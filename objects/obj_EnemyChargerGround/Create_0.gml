@@ -21,7 +21,7 @@ stun = false;
 damageCooldown = 0;
 stunCooldown = 0;
 myStunDuration = 0;
-finalStunDuration = 150;
+finalStunDuration = room_speed * 1.5;
 
 active = false;
 

@@ -8,7 +8,7 @@ if (instance_exists(obj_Players)) {
 	
 	if(obj_Players.state == 1){
 		
-		obj_Players.basicAttackDamage = 30;
+		obj_Players.basicAttackDamage = 40;
 		obj_Players.playerSpeed = 10;
 		obj_Players.object_gravity = 2;
 	}

@@ -53,6 +53,17 @@ if (input_jump && (onGround || (hasDoubleJump && manaPoints >= doubleJumpCost)) 
 		manaPoints -= doubleJumpCost;
 	}
 }
+else if(!place_free(x, y + 1)){
+	vertical = -20;
+	jumped = true;
+}
+
+
+
+
+
+
+
 
 // sprite facing
 if (move > 0) {
@@ -71,9 +82,10 @@ if (input_change2) { targetState = 2; }
 if (input_change3) { targetState = 3; }
 if (input_change4) { targetState = 4; }
 
+
 if (transformCooldownCounter > 0) {
 	transformCooldownCounter--;
-} else if (targetState != state && manaPoints >= transformationCost) {
+} else if ((targetState != state) && (manaPoints >= transformationCost)) {
 	state = targetState;
 	manaPoints -= transformationCost;
 	transformCooldownCounter = transformCooldown;
@@ -128,12 +140,21 @@ if (state == 1) {
 
 
 
+
+
+
+
+
+
 // handles basic attacks
-if ((basicAttackCooldown <= 0) && (attack)) {
+if (basicAttackCooldown > 0){
+	basicAttackCooldown--;
+}
+else if(attack){
 	input_left = false;
 	input_right = false;
 	input_jump = false;
-	basicAttackCooldown = 10;
+	basicAttackCooldown = room_speed * 0.3;
 	
 	if (facing == 1) {
 		instance_create_layer(x + 20, y + 10, "instances", obj_BasicAttack);
@@ -144,11 +165,25 @@ if ((basicAttackCooldown <= 0) && (attack)) {
 }
 
 
+
+
+
+
+
+
 //special attack
-if((specialAttactCooldown <= 0) && (specialAttack) && (manaPoints >= specialAttackCost)){
+if(specialAttactCooldown > 0){
+	specialAttactCooldown--;
+}
+else if((specialAttack) && (manaPoints >= specialAttackCost)){
 	scr_SpecialAttack();
 	manaPoints = manaPoints - specialAttackCost;
 }
+
+
+
+
+
 
 
 //handles health alarm
@@ -166,6 +201,9 @@ if (healthLoop = true) {
 }
 
 
+
+
+
 // handles death
 if (healthPoints <= 0) {
 	audio_stop_all();
@@ -178,8 +216,6 @@ if (healthPoints <= 0) {
 
 
 
-shiftState = false;
-specialAttactCooldown--;
-basicAttackCooldown--;
-invincibility++;
-passiveCooldown++;
+shiftState = false;  
+invincibility--;
+passiveCooldown--;

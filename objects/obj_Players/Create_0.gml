@@ -8,26 +8,25 @@ doubleJump = false;
 hasDoubleJump = false;
 
 facing = 1;
-basicAttackCooldown = 0;
+basicAttackCooldown = room_speed * 0.3;
 
 state = 2;
 
 healthPoints = 100;
 manaPoints = 100;
 
-invincibility = 0;
-invincibilitySet = 50;
-specialAttactCooldown = 0;
+invincibility = room_speed * 0.3;
+specialAttactCooldown = room_speed * 0.8;
 specialAttackCost = 15;
 countingN = 0;
 
 basicAttackDamage = 20;
 shiftState = false;
-passiveCooldown = 0;
+passiveCooldown = room_speed * 0.3;
 
 earthBlock = false;
 
 transformationCost = 0;
-transformCooldown = 30;
+transformCooldown = room_speed * 0.2;
 transformCooldownCounter = 0;
 doubleJumpCost = 5;

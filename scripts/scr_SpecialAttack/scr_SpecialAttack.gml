@@ -32,4 +32,4 @@ if (obj_Players.state == 1) {
 	}
 }
 
-obj_Players.specialAttactCooldown = 20;
+obj_Players.specialAttactCooldown = room_speed * 0.8;
