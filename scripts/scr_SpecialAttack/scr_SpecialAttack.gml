@@ -1,35 +1,18 @@
-
-
-if (obj_Players.state == 1) {
-	
-	if (obj_Players.facing == 1) {
-		instance_create_layer(obj_Players.x + 20, obj_Players.y + 10, "instances", obj_FireSpecial);
-	} else {
-		instance_create_layer(obj_Players.x -20 , obj_Players.y + 10, "instances", obj_FireSpecial);
-	}
-	scr_PlayAudio(sfx_spec_fire);
-	
-} else if (obj_Players.state == 2) {
-	
-	instance_create_layer(obj_Players.x, obj_Players.y - 20, "Effects", obj_WaterSpecial);
-	scr_PlayAudio(sfx_spec_heal);
-	
-} else if (obj_Players.state == 3) {
-	scr_PlayAudio(sfx_spec_dirt);
-	
-	if (obj_Players.facing == 1) {
-		instance_create_layer(obj_Players.x + 20, obj_Players.y + 60, "instances", obj_EarthSpecial);
-	} else {
-		instance_create_layer(obj_Players.x -20 , obj_Players.y + 60, "instances", obj_EarthSpecial);
-	}
-	
-} else {
-	
-	if (obj_Players.facing == 1) {
-		instance_create_layer(obj_Players.x + 75, obj_Players.y + 60, "instances", obj_AirSpecial);
-	} else {
-		instance_create_layer(obj_Players.x - 75 , obj_Players.y + 60, "instances", obj_AirSpecial);
+// Handle special attacking
+if(instance_exists(obj_Player)) {
+	switch(obj_Player.state){
+		case Wizards.fire:
+			// Create the fire special 20 units infrot of player
+			break;
+		case Wizards.water:
+			// Create the water special on top of the player
+			break;
+		case Wizards.earth:
+			// Create the earth special on top of the player
+			break;
+		case Wizards.air:
+			// Create the air special in front of the player
+			break;
+		default:
 	}
 }
-
-obj_Players.specialAttactCooldown = room_speed * 0.8;

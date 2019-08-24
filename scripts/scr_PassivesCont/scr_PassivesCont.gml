@@ -1,22 +1,22 @@
+// Passives are called every frame
 
 
-
-if (instance_exists(obj_Players)) {
+if (instance_exists(obj_Player)) {
 	
-	if(obj_Players.state == 1){
+	if(obj_Player.state == Wizards.fire){
 		
 		
-		if(passiveCooldown <= 0){
+		if(passiveCooldown >= 20){
 			healthPoints = healthPoints - 1;
-			passiveCooldown = room_speed * 0.3;
+			passiveCooldown = 0;
 		}
 		
 	}
-	else if((obj_Players.state == 2) && (obj_Players.healthPoints < 100)){
+	else if((obj_Player.state == Wizards.water) && (obj_Player.healthPoints < max_hitpoints)){
 		
-		if(passiveCooldown <= 0 ){
+		if(passiveCooldown >= 20 ){
 			healthPoints = healthPoints + 1;
-			passiveCooldown = room_speed * 0.3;
+			passiveCooldown = 0;
 		}
 		
 	}

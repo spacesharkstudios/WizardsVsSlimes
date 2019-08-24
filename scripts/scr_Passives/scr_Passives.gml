@@ -1,33 +1,50 @@
+// Passives are updated when switching states
 
 
-
-if (instance_exists(obj_Players)) {
-	obj_Players.doubleJump = (obj_Players.state == 4);
-	obj_Players.earthBlock = (obj_Players.state == 3);
-	obj_Players.knockback_resist = (obj_Players.state == 3 ? 1.5 : 1);
-	
-	if(obj_Players.state == 1){
-		
-		obj_Players.basicAttackDamage = 40;
-		obj_Players.playerSpeed = 10;
-		obj_Players.object_gravity = 2;
+if(instance_exists(obj_Player)){
+	switch(obj_Player.state) {
+		case Wizards.fire:
+			// Set passives for the fire player
+			obj_Player.canAirJump = false;
+			obj_Player.spd = 3.5;
+			obj_Player.jump_force = -7.5
+			obj_Player.attack_damage = 10;
+			obj_Player.attackTimer = 20;
+			obj_Player.attack_offset = 4;
+			obj_Player.attack_damage = 3;
+			break;
+		case Wizards.water:
+			// Set passives for the water player
+			obj_Player.canAirJump = false;
+			obj_Player.spd = 3;
+			obj_Player.jump_force = -7.5
+			obj_Player.attack_damage = 5;
+			obj_Player.attackTimer = 20;
+			obj_Player.attack_offset = 4;
+			obj_Player.attack_damage = 3;
+			break;
+		case Wizards.earth:
+			// Set passives for the earth player
+			obj_Player.canAirJump = false;
+			obj_Player.spd = 2.7;
+			obj_Player.jump_force = -7
+			obj_Player.attack_damage = 7;
+			obj_Player.attackTimer = 20;
+			obj_Player.attack_offset = 4;
+			obj_Player.attack_damage = 3;
+			break;
+		case Wizards.air:
+			// Set passives for the air player
+			obj_Player.canAirJump = true;
+			obj_Player.spd = 4;
+			obj_Player.jump_force = -8;
+			obj_Player.attack_damage = 5;
+			obj_Player.attackTimer = 20;
+			obj_Player.attack_offset = -1;
+			obj_Player.attack_damage = 3;
+			break;
+		default:
 	}
-	else if(obj_Players.state == 2){
-		obj_Players.basicAttackDamage = 20;
-		obj_Players.playerSpeed = 10;
-		obj_Players.object_gravity = 2;
-	}
-	else if(obj_Players.state == 3){
-		obj_Players.basicAttackDamage = 20;
-		obj_Players.playerSpeed = 9;
-		obj_Players.object_gravity = 2.1;
-	}
-	else{
-		obj_Players.basicAttackDamage = 20;
-		obj_Players.playerSpeed = 15;
-		obj_Players.object_gravity = 1.6;
-	}
-	
 }
 
 
