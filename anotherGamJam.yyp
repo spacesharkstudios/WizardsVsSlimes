@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "641f885f-7142-4395-ba4b-648727ea273c",
+            "Value": {
+                "id": "4d265bd1-aacb-4984-b6a0-682cd07cfb21",
+                "resourcePath": "rooms\\TestHamilton\\TestHamilton.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "650d5cf6-aff5-4d18-9963-d13766dbbf4e",
             "Value": {
                 "id": "c6bd41b9-ab80-4945-a9c4-9e3e1125821d",
