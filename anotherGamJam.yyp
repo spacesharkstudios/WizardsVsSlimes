@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "32b5236b-a856-4dee-8e76-7d86f5392e8b",
+            "Value": {
+                "id": "d1e08305-5ce5-4bb7-9816-f18f3d1c57ab",
+                "resourcePath": "sprites\\spr_Suislime_Jump_Falling\\spr_Suislime_Jump_Falling.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "32fe59bd-0ed0-43a1-a11f-0e77b301b1ad",
             "Value": {
                 "id": "c1128310-767e-43fc-83be-44a4c7b328b7",
@@ -847,6 +855,14 @@
             }
         },
         {
+            "Key": "83ccb10d-bbef-42d6-afe7-e25e5ce6c1af",
+            "Value": {
+                "id": "dd103243-edcd-4036-bd99-3898ca6930e9",
+                "resourcePath": "views\\83ccb10d-bbef-42d6-afe7-e25e5ce6c1af.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "84dc7f8c-5cf6-45df-811d-9c2312bd5096",
             "Value": {
                 "id": "ad84d48d-6038-49f7-9663-a8a40c293143",
@@ -924,6 +940,14 @@
                 "id": "20b5cea0-0711-4907-ad6a-f358bf5bb37d",
                 "resourcePath": "views\\93a74c68-ca06-4fcc-9b93-f4ff1b9800cc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "93c3c1ae-7782-449d-ad92-41a227648cfb",
+            "Value": {
+                "id": "584c8364-c3ae-46f0-9c81-19e7d623cf6a",
+                "resourcePath": "sprites\\spr_Suislime_Idle\\spr_Suislime_Idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1212,6 +1236,14 @@
                 "id": "85889eec-f60b-494f-b0a3-fd91291ea7a0",
                 "resourcePath": "views\\b7fe645b-a417-4b3c-a609-c7e7f4e46baf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b8677502-f4b1-48b0-92df-a908bcbecbcb",
+            "Value": {
+                "id": "dc12e76c-2fa8-4c9b-98dc-f48ef79d8c1f",
+                "resourcePath": "sprites\\spr_Suislime_Charging\\spr_Suislime_Charging.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1532,6 +1564,14 @@
                 "id": "a959e80d-1b9c-4f13-ad29-43906425a003",
                 "resourcePath": "sounds\\sfx_player_low\\sfx_player_low.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "edc63884-b2fc-4b57-bbc7-bdaa09a74611",
+            "Value": {
+                "id": "17c2cd5b-92a4-490f-ba8d-6800b5e2312b",
+                "resourcePath": "sprites\\spr_Suislime_Jump_Rising\\spr_Suislime_Jump_Rising.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
