@@ -3,8 +3,9 @@
 // Get Inputs
 scr_GetInputs(0);
 
+#region Movement
 // Set velocity_x
-if(can_attack && can_move){
+if(can_move){
 	velocity_x = (input_right - input_left) * spd;
 } else {
 	velocity_x = 0;
@@ -16,10 +17,10 @@ if(velocity_x != 0){
 }
 
 // Jump
-if(grounded && input_jump && can_attack && can_move){
+if(grounded && input_jump && can_move){
 	velocity_y = -9.2;
 }
-if(!grounded && canAirJump && numAirJumps && input_jump && can_attack && can_move){ // Air wizard only
+if(!grounded && canAirJump && numAirJumps && input_jump && can_move){ // Air wizard only
 	velocity_y = -9.2;
 	numAirJumps --;
 }
@@ -34,61 +35,90 @@ if(velocity_y > 0){
 } else {
 	gravity_scale = static_gravity_scale;
 }
+#endregion
 
-// set state
+#region Set State
 if(input_change1 && can_switch){
 	alarm[0] = changeTimer;
 	state = Wizards.fire;
 	can_switch = false;
 	attackTimer = 20;
-	attack_offset = 4;
-	scr_Passives();
+	scr_Stats();
+	
 } else if(input_change2 && can_switch){
 	alarm[0] = changeTimer;
 	state = Wizards.water;
 	can_switch = false;
+	attackTimer = 20;
+	firePassive = 0;
+	scr_Stats();
 	
-	scr_Passives();
 } else if(input_change3 && can_switch){
 	alarm[0] = changeTimer;
 	state = Wizards.earth;
 	can_switch = false;
 	attackTimer = 20;
-	scr_Passives();
+	firePassive = 0;
+	scr_Stats();
+	
 } else if(input_change4 && can_switch){
 	alarm[0] = changeTimer;
 	state = Wizards.air;
 	can_switch = false;
 	attackTimer = 20;
-	scr_Passives();
+	firePassive = 0;
+	scr_Stats();
+	
 }
-//scr_PassivesCont();
-// Attacking
-// ToDo add attacking
+#endregion
+
+#region Attacking
 if(input_attack && can_attack){
 	can_attack = false;
 	alarm[1] = attackTimer;
+	
+	// Handling fire passive
+	if(state == Wizards.fire){
+		if(firePassive < 3){
+			firePassive++;
+		}
+	}
 	scr_Attack();
 }
+
+
+// Special Attacts
+if(input_specialAttack1 || input_specialAttack2){
+	scr_SpecialAttack(input_specialAttack1, input_specialAttack2);
+}
+#endregion
 
 // Physics calculations
 event_inherited();
 
-
-// Handle visuals
+#region Visuals
 image_xscale = facing;
-if(velocity_x != 0 && grounded){
+if(velocity_x != 0 && (grounded || landing)){
 	sprite_index = spr_player_run;
-} else if(velocity_x = 0 && grounded){
+} else if(velocity_x = 0 && (grounded || landing)){
 	sprite_index = spr_player_idle;
 } else if(velocity_y != 0){
 	sprite_index = spr_player_jump;
-} if(!can_attack && grounded){
+} if(!can_attack && (grounded || landing)){
 	sprite_index = spr_player_attack;
 }
+
 
 // Change the color of the wizard
 rowIndex = state;
 rowIndex = rowIndex mod colorSets;
 
 vNormal = rowIndex / 256;
+
+if(state = Wizards.fire){
+	repeat(5 * firePassive){
+		part_particles_create(global.Player_Particles, x - .25 * sprite_width + irandom(sprite_width * .5), y + .5 * sprite_height - irandom(sprite_height * .5), global.Fire_Particles, 1);
+		part_particles_create(global.Player_Particles, x - .25 * sprite_width + irandom(sprite_width * .5), y + .5 * sprite_height - irandom(sprite_height * .5), global.Smoke_Particles, 1);
+	}
+}
+#endregion

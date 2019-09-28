@@ -52,7 +52,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "136",
+            "value": "room_speed * 5",
             "varName": "timer",
             "varType": 0
         }

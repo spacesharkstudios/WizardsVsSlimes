@@ -1,0 +1,1 @@
+playerInvinciblity = false;

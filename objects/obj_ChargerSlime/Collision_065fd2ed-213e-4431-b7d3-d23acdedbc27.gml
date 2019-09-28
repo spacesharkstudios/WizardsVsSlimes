@@ -1,0 +1,1 @@
+scr_DamagePlayer(damage);

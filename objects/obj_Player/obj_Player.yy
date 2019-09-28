@@ -35,16 +35,6 @@
             "m_owner": "05304629-14d3-4ac1-a669-d9f0a6082837"
         },
         {
-            "id": "b525164f-b599-41b7-a8b6-73d8e9db8850",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "05304629-14d3-4ac1-a669-d9f0a6082837"
-        },
-        {
             "id": "108b647c-2313-47a1-b7b4-932ebcb30f60",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -72,6 +62,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 64,
             "eventtype": 8,
+            "m_owner": "05304629-14d3-4ac1-a669-d9f0a6082837"
+        },
+        {
+            "id": "c7f8f672-bcda-4216-943b-74d64ba13bdf",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 2,
             "m_owner": "05304629-14d3-4ac1-a669-d9f0a6082837"
         }
     ],
@@ -136,6 +136,20 @@
             "value": "0",
             "varName": "attacking",
             "varType": 3
+        },
+        {
+            "id": "ee133ef5-c9a5-4a2a-8882-02c9cb1568f1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "mana",
+            "varType": 0
         }
     ],
     "solid": false,

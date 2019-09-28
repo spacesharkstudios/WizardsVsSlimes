@@ -1,0 +1,70 @@
+========================================================================================
+
+Hamilton's Development Notes
+
+========================================================================================
+9/7/2019
+
+Completed:
+	Scrolling Camera
+	Tiles
+	Taking damage shader
+	Implemented taking damage shader
+
+
+TODO:
+	Fire particles for fire stacks
+	Deadzoning on camera
+	(Special animations)
+
+========================================================================================
+9/8/2019
+
+Completed:
+	Fire Particles
+	Scaling fire particles based on fire stacks
+	Short Demo level terrain
+	Deadzoning on camera
+	Fixed grounding bug
+	added #region #endregion tags to some objects (helps readablilty)
+
+TODO:
+	Start special animations
+	Redo slimezooka sprites and animations
+
+Known Issues:
+	Gunner slime animations are broken
+	
+Other Notes:
+	Timelines can be used for creating cutscenes easily
+	#region #endregion is used to create collapsable code blocks
+
+========================================================================================
+9/9/2019
+
+Completed:
+	Paralaxing backgrounds
+	Clouds
+	Added more #region #endregion tags
+	Fixed current slimezook animations
+	Fixed gunner slime animations
+	Fixed bullet facing issues
+	Added hit effect for bullet
+	(for testing purposes) removed random interval between bursts for gunner slime
+
+TODO:
+	Start special animations
+	Redo slimezooka sprites and animations
+
+Known Issues:
+	Stuff can get stuck in walls
+	
+Other Notes:
+	A paralaxing background object is required for each seperate background layer
+	Cloud spawner can just be dropped into the world and will work
+	Fire needs improvement (it looks kinda stupid?)
+	Jumps seem a little high, might want to adjust it
+	I love this notes feature
+
+========================================================================================
+	

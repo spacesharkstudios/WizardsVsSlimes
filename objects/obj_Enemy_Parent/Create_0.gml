@@ -1,10 +1,10 @@
-/// @description Insert description here
-// You can write your code in this editor
 
 // Inherit the parent event
 event_inherited();
 
 facing = -1;
 
-hitpoints = max_hitpoints
+hitpoints = max_hitpoints;
 invincible = false;
+invinciblity_timer = room_speed * 0.5
+waterHealthGain = 10;	// water passive

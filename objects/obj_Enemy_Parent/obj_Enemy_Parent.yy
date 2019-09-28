@@ -83,6 +83,46 @@
             "enumb": 11,
             "eventtype": 2,
             "m_owner": "09897a73-af64-4333-bbce-bdb755eebdda"
+        },
+        {
+            "id": "4fa792e6-d9c5-41e3-9718-589cd51d50a6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "5640f064-ed59-4726-8526-6ea64a9ebfc0",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "09897a73-af64-4333-bbce-bdb755eebdda"
+        },
+        {
+            "id": "fa639fca-3dba-482d-819d-bdd4b906709f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "c55e80fc-5593-4918-90a6-75c72a3105a5",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "09897a73-af64-4333-bbce-bdb755eebdda"
+        },
+        {
+            "id": "dba817f5-966f-40fa-b909-8ca7079a587d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 2,
+            "m_owner": "09897a73-af64-4333-bbce-bdb755eebdda"
+        },
+        {
+            "id": "810f1d06-2cac-49ad-8fc3-f550f0045e8b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "09897a73-af64-4333-bbce-bdb755eebdda"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -162,7 +202,7 @@
             "varType": 0
         },
         {
-            "id": "68ba0ac0-61ba-449e-8060-2baba8dbb03e",
+            "id": "603a621a-9cb2-42d3-b354-6b866644c8e7",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -172,11 +212,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "invincibile",
-            "varType": 3
+            "varName": "manaValue",
+            "varType": 0
         },
         {
-            "id": "3fd3f511-68af-447e-9527-12cceea0960f",
+            "id": "97ed854d-13aa-45c5-8a42-7c67c04a50c3",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -185,9 +225,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "50",
-            "varName": "invinciblity_timer",
-            "varType": 0
+            "value": "False",
+            "varName": "white_flash",
+            "varType": 3
         }
     ],
     "solid": false,

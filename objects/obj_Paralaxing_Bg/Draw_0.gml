@@ -1,0 +1,1 @@
+draw_sprite_tiled(spr, 0, camera.x * speed_relative, (camera.y * speed_relative) + (y_offset / speed_relative));

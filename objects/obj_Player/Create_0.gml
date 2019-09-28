@@ -17,6 +17,21 @@ numAirJumps = 1;
 maxAirJumps = 1;
 
 attack_damage = 5;
+playerInvinciblity = false;
+firePassive = 0;
+
+// special cost values
+fireSpecialCost = 30;
+waterSpecialCost = 30;
+earthSpecialCost = 30;
+airSpecialCost = 30;
+
+// special damage values
+fireballDamage = 5;
+fireballExplosionDamage = 10;
+
+
+
 
 rowIndex = 0;
 colorSets = 4;
@@ -28,7 +43,6 @@ paletteSwapSampler = shader_get_sampler_index(shdr_paletteSwap, "Palette");
 texturePalette = sprite_get_texture(spr_shaderTexture, 0);
 
 state = Wizards.water;
-scr_Passives();
 
 enum Wizards{
 	fire,
