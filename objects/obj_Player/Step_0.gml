@@ -1,5 +1,10 @@
 /// @description Player Controls
 
+//handles player death
+if (god_mode != true && hitpoints == 0) {
+	instance_destroy();
+}
+
 // Get Inputs
 scr_GetInputs(0);
 

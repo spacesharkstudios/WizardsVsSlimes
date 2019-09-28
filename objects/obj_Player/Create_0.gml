@@ -1,3 +1,5 @@
+//GOD MODE
+god_mode = false;
 
 // Inherit the parent event
 event_inherited();
