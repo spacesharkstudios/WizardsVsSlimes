@@ -11,3 +11,5 @@ facing = 1;
 
 damage = 20;
 manaValue = 10;
+
+hitpoints = 20;

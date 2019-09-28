@@ -1,0 +1,2 @@
+bubblePrison = false;
+stun = false;

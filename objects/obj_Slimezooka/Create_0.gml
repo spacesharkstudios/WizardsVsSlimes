@@ -14,3 +14,5 @@ canFire = true;
 manaValue = 10;
 
 animate_attack = false;
+
+hitpoints = 20;

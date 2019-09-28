@@ -21,14 +21,15 @@ playerInvinciblity = false;
 firePassive = 0;
 
 // special cost values
-fireSpecialCost = 30;
-waterSpecialCost = 30;
-earthSpecialCost = 30;
-airSpecialCost = 30;
+fireSpecialCost = 10;
+waterSpecialCost = 10;
+earthSpecialCost = 10;
+airSpecialCost = 10;
 
 // special damage values
 fireballDamage = 5;
 fireballExplosionDamage = 10;
+fireSelfExplosion = 19;
 
 
 
