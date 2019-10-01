@@ -13,7 +13,8 @@ if(instance_exists(obj_Combust)){
 }
 
 if(bubblePrison == true){
-	velocity_x += 2;
+	velocity_y = -.5;
+	can_move = false;
 }
 
 
