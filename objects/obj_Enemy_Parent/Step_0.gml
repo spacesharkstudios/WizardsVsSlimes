@@ -13,7 +13,13 @@ if(instance_exists(obj_Combust)){
 }
 
 if(bubblePrison == true){
-	velocity_x += 2;
+	active = false;
+	if(y <= (originY - 30)){
+		
+	}
+	else{
+		velocity_y -= 0.5;
+	}
 }
 
 

@@ -5,8 +5,11 @@ event_inherited();
 
 image_speed = sign(velocity_x);
 
-if(can_move){
+if(active){
 	velocity_x = spd * facing;
+}
+else{
+	velocity_x = 0;
 }
 
 if(reacts_to_slime_barrier){

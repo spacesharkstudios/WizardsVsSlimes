@@ -12,4 +12,5 @@ burning = false;
 didYouExplode = true;
 
 bubblePrison = false;
+originY = 0;
 stun = false;

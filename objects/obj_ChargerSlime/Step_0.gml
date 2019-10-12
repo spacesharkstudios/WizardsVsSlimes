@@ -52,4 +52,9 @@ if(instance_exists(obj_Player)){
 		
 		
 	}
+	else{
+		velocity_x = 0;
+		sprite_index = spr_SlimeCharger_Idle;
+		
+	}
 }

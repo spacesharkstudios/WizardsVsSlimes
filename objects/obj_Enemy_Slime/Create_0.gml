@@ -6,3 +6,4 @@ event_inherited();
 hitpoints = 20;
 damage = 20;
 manaValue = 10;
+active = true;

@@ -1,3 +1,3 @@
 bubblePrison = true;
-stun = true;
-alarm[1] = room_speed * 2;
+originY = y;
+alarm[1] = room_speed * 6;
