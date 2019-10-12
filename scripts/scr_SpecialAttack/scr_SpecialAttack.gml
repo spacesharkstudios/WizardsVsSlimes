@@ -63,7 +63,7 @@ if(instance_exists(obj_Player)) {
 			}
 			
 			
-			// tital wave Special
+			// bubble prison Special
 			else if(attack2){
 				if(obj_Player.mana >= obj_Player.waterSpecialCost){
 					obj_Player.mana -= obj_Player.waterSpecialCost;

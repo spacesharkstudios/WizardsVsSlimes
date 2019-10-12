@@ -73,4 +73,7 @@ if(instance_exists(obj_Player)){
 		
 		
 	}
+	else{
+		sprite_index = spr_MachineGunSlime_Idle;
+	}
 }

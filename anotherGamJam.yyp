@@ -1055,14 +1055,6 @@
             }
         },
         {
-            "Key": "a0446586-0801-4f60-be3b-c7a1d86144bf",
-            "Value": {
-                "id": "2877b806-6e7d-4588-80ce-e64e5563dee4",
-                "resourcePath": "objects\\obj_BubblePrison\\obj_BubblePrison.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a16d06ab-2c1d-43c9-a539-8daa0936d798",
             "Value": {
                 "id": "bf8d2ee7-718c-4ada-87eb-da8a96048696",
