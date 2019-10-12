@@ -2,10 +2,23 @@
 // Inherit the parent event
 event_inherited();
 
-image_speed = sign(velocity_x);
+//image_speed = sign(velocity_x);
 
 if(can_move){
-	velocity_x = spd * facing;
+	// movement
+	if(!grounded){
+		
+		if(!place_meeting(x + facing*spd, y, obj_WallAI)){
+			velocity_x = facing*spd;
+		}
+		
+		
+	} else if(wasGrounded == false && grounded = true) {
+		velocity_x = 0;
+		alarm[2] = 60;
+	} else {
+		velocity_x = 0;
+	}
 }
 else{
 	velocity_x = 0;
@@ -50,29 +63,48 @@ if(reacts_to_slime_barrier){
 
 
 if(instance_exists(obj_Player)){
+	facing = sign(obj_Player.x - x);
+	
 	if(active){
 
 		//Explosion Code//
 
 		//checks to see if close to player
 		//then stops
-		if (abs(x - obj_Player.x) <= 100 && abs(y - obj_Player.y) <= 100) {
+		if (point_distance(x, y, obj_Player.x, obj_Player.y) <= 50) {
 			velocity_x = 0;
-			will_explode = true;	
+			can_move = false;
+			will_explode = true;
+			//sprite_index = spr_Suislime_Charging;
 		}
 
 			//if explosion is true, then explode in .75 seconds
 			if (will_explode == true) {
 				explode_timer++;
-				if (explode_timer = room_speed * 0.75) {
+				if (explode_timer = room_speed * 1) {
 					//explode
 					instance_create_layer(x, y, "Effects", obj_Explosion);
 					instance_destroy();
 				}
 			}
-		
+
 	}
 	else{
 		velocity_x = 0;
 	}
 }
+
+if(grounded && !will_explode){
+	sprite_index = spr_Suislime_Idle;
+} else if (!grounded && !will_explode){
+	if(velocity_y < 0){
+		sprite_index = spr_Suislime_Jump_Rising;
+	} else {
+		sprite_index = spr_Suislime_Jump_Falling;
+	}
+} else {
+	sprite_index = spr_Suislime_Charging;
+}
+image_xscale = facing;
+
+wasGrounded = grounded;

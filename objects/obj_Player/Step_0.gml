@@ -116,7 +116,7 @@ rowIndex = rowIndex mod colorSets;
 vNormal = rowIndex / 256;
 
 if(state = Wizards.fire){
-	repeat(100 + (firePassive + 1) * 5){
+	repeat((firePassive) * 5){
 		part_particles_create(global.Player_Particles, x - .25 * sprite_width + irandom(sprite_width * .5), y + .5 * sprite_height - irandom(sprite_height * .5), global.Fire_Particles, 1);
 		part_particles_create(global.Player_Particles, x - .25 * sprite_width + irandom(sprite_width * .5), y + .5 * sprite_height - irandom(sprite_height * .5), global.Smoke_Particles, 1);
 	}

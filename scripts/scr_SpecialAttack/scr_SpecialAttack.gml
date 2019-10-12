@@ -11,7 +11,7 @@ if(instance_exists(obj_Player)) {
 			if(attack1){
 				if(obj_Player.mana >= obj_Player.fireSpecialCost){
 					obj_Player.mana -= obj_Player.fireSpecialCost;
-					instance_create_layer(x, y, "Instances", obj_Fireball);
+					instance_create_layer(x, y, layer, obj_Fireball);
 				}
 			}
 			
@@ -21,7 +21,7 @@ if(instance_exists(obj_Player)) {
 			//	if(obj_Player.mana >= obj_Player.fireSpecialCost){
 			//		obj_Player.mana -= obj_Player.fireSpecialCost;
 			//		obj_Player.hitpoints -= 20;
-			//		instance_create_layer(x, y, "Instances", obj_SelfExplosion);
+			//		instance_create_layer(x, y, layer, obj_SelfExplosion);
 			//	}
 			//}
 			
@@ -32,7 +32,7 @@ if(instance_exists(obj_Player)) {
 				
 				if(obj_Player.mana >= obj_Player.fireSpecialCost){
 					obj_Player.mana -= obj_Player.fireSpecialCost;
-					instance_create_layer(x, y, "Instances", obj_Combust);
+					instance_create_layer(x, y, layer, obj_Combust);
 				}
 			}
 			
@@ -67,7 +67,7 @@ if(instance_exists(obj_Player)) {
 			else if(attack2){
 				if(obj_Player.mana >= obj_Player.waterSpecialCost){
 					obj_Player.mana -= obj_Player.waterSpecialCost;
-					instance_create_layer(x, y, "Instances", obj_BubbleProjectile);
+					instance_create_layer(x, y, layer, obj_BubbleProjectile);
 				}
 			}
 			

@@ -3,7 +3,7 @@
 		if(obj_Boss1.attackStateCounter < 200){
 			
 			if(obj_Boss1.bigAttackCounter >= obj_Boss1.bigAttackCooldown){
-				instance_create_layer(x, y, "instances", obj_BigBossAttack);
+				instance_create_layer(x, y, layer, obj_BigBossAttack);
 				obj_Boss1.bigAttackCounter = 0;
 			}
 			
@@ -12,7 +12,7 @@
 			
 			
 			if(obj_Boss1.lightAttackCounter >= obj_Boss1.lightAttackCooldown){
-					instance_create_layer(x, y, "instances", obj_lightBossAttack);
+					instance_create_layer(x, y, layer, obj_lightBossAttack);
 					obj_Boss1.lightAttackCounter = 0;
 					//obj_Boss1.lightAttackCounter2++;
 			}
@@ -22,7 +22,7 @@
 		}
 		
 		if(obj_Boss1.summonSlimesCounter  >= obj_Boss1.summonSlimesCooldown){
-				instance_create_layer(x, y, "instances", obj_MiniSlime);
+				instance_create_layer(x, y, layer, obj_MiniSlime);
 				obj_Boss1.summonSlimesCounter = 0;
 			}
 			
@@ -34,7 +34,7 @@
 		if(obj_Boss1.attackStateCounter < 200){
 			
 			if(obj_Boss1.bigAttackCounter >= obj_Boss1.bigAttackCooldown){
-				instance_create_layer(x, y, "instances", obj_BigBossAttack);
+				instance_create_layer(x, y, layer, obj_BigBossAttack);
 				obj_Boss1.bigAttackCounter = 0;
 			}
 			
@@ -43,7 +43,7 @@
 			
 			
 			if(obj_Boss1.lightAttackCounter >= obj_Boss1.lightAttackCooldown){
-					instance_create_layer(x, y, "instances", obj_lightBossAttack);
+					instance_create_layer(x, y, layer, obj_lightBossAttack);
 					obj_Boss1.lightAttackCounter = 0;
 					//obj_Boss1.lightAttackCounter2++;
 			}
@@ -53,7 +53,7 @@
 		}
 		
 		if(obj_Boss1.summonSlimesCounter  >= obj_Boss1.summonSlimesCooldown){
-			instance_create_layer(x, y, "instances", obj_EnemyChargerGround);
+			instance_create_layer(x, y, layer, obj_EnemyChargerGround);
 			obj_Boss1.summonSlimesCounter = 0;
 		}
 		
