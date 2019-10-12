@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "38d12c43-e1b3-4585-b315-1429e01ec98b",
+            "Value": {
+                "id": "b6aada2c-d1e7-4830-bc4c-3814636eaa94",
+                "resourcePath": "objects\\obj_healthPotion\\obj_healthPotion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "39d51e3d-7a0d-43c1-ba02-6da4b1940ab4",
             "Value": {
                 "id": "a32f7746-7439-416e-b8f6-c392730cd088",
@@ -684,6 +692,14 @@
                 "id": "c5f597d6-abb2-4207-85a4-9e344b6bd091",
                 "resourcePath": "sounds\\bgm_lose\\bgm_lose.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "69f577d9-9d15-491b-837d-30c9ebd4f230",
+            "Value": {
+                "id": "a32f78d4-94c0-4ba5-8730-886cc48067fa",
+                "resourcePath": "objects\\obj_ManaPotion\\obj_ManaPotion.yy",
+                "resourceType": "GMObject"
             }
         },
         {
