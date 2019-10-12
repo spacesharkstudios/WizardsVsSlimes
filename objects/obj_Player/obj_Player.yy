@@ -150,6 +150,20 @@
             "value": "100",
             "varName": "mana",
             "varType": 0
+        },
+        {
+            "id": "dda8bbbc-c897-4c6f-abb6-58253f6d59e7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "max_mana",
+            "varType": 0
         }
     ],
     "solid": false,
