@@ -2,10 +2,18 @@
 // Inherit the parent event
 event_inherited();
 
-image_speed = sign(velocity_x);
+//image_speed = sign(velocity_x);
 
 if(can_move){
-	velocity_x = spd * facing;
+	// movement
+	if(!grounded){
+		velocity_x = facing*spd;
+	} else if(wasGrounded == false && grounded = true) {
+		velocity_x = 0;
+		alarm[2] = 60;
+	} else {
+		velocity_x = 0;
+	}
 }
 else{
 	velocity_x = 0;
