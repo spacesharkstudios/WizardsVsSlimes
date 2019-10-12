@@ -7,12 +7,14 @@ event_inherited();
 if(can_move){
 	// movement
 	if(!grounded){
+
 		
 		if(!place_meeting(x + facing*spd, y, obj_WallAI)){
 			velocity_x = facing*spd;
 		}
 		
 		
+
 	} else if(wasGrounded == false && grounded = true) {
 		velocity_x = 0;
 		alarm[2] = 60;
@@ -102,6 +104,18 @@ if(grounded && !will_explode){
 	} else {
 		sprite_index = spr_Suislime_Jump_Falling;
 	}
+
+}
+
+if(grounded && !will_explode){
+	sprite_index = spr_Suislime_Idle;
+} else if (!grounded && !will_explode){
+	if(velocity_y < 0){
+		sprite_index = spr_Suislime_Jump_Rising;
+	} else {
+		sprite_index = spr_Suislime_Jump_Falling;
+	}
+
 } else {
 	sprite_index = spr_Suislime_Charging;
 }
