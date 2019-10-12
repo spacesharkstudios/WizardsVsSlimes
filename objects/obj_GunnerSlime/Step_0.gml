@@ -55,7 +55,7 @@ if(instance_exists(obj_Player)){
 		if(gotThere && burstFire){
 			// firing 4 round burst
 			if(canFire) {
-				bullet = instance_create_layer(x + (sign(facing) * 23), y + 1, "instances", obj_Bullet);
+				bullet = instance_create_layer(x + (sign(facing) * 23), y + 1, layer, obj_Bullet);
 				bullet.myFacing = facing;
 				canFire = false;
 				burstFireCounter++;
@@ -69,8 +69,8 @@ if(instance_exists(obj_Player)){
 			}
 		}
 		
-		
-		
-		
+	}
+	else{
+		sprite_index = spr_MachineGunSlime_Idle;
 	}
 }
