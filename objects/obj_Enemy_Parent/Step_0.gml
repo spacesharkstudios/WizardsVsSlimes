@@ -11,7 +11,11 @@ if(instance_exists(obj_Combust)){
 	}
 }
 
-if(bubblePrison == true){
+
+if(stun == true){
+	active = false;
+}
+else if(bubblePrison == true){
 	active = false;
 	if(y <= (originY - 30)){
 		

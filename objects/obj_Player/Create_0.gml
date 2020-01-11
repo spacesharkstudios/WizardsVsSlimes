@@ -1,5 +1,3 @@
-//GOD MODE
-god_mode = false;
 
 // Inherit the parent event
 event_inherited();
@@ -23,17 +21,23 @@ playerInvinciblity = false;
 firePassive = 0;
 
 // special cost values
-fireSpecialCost = 10;
-waterSpecialCost = 10;
-earthSpecialCost = 10;
-airSpecialCost = 10;
+fireSpecialCost = 1;
+waterSpecialCost = 1;
+earthSpecialCost = 1;
+airSpecialCost = 1;
 
-// special damage values
+// special fire damage values
 fireballDamage = 5;
 fireballExplosionDamage = 10;
 fireSelfExplosion = 19;
 
+// special earth values
+haveEarthArmor = false;
+earthArmor = 60;
 
+// special air values
+dashActivate = false;
+dashspd = 15;
 
 
 rowIndex = 0;

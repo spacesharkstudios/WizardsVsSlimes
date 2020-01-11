@@ -1,3 +1,4 @@
+image_angle = -90 * obj_Player.facing;
 spd = 10;
 playerFacing = 1;
 

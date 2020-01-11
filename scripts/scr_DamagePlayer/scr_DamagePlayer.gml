@@ -7,7 +7,13 @@ enemyDamage = argument0;
 if(!obj_Player.playerInvinciblity){
 	if(obj_Player.state == Wizards.earth){
 		
-		obj_Player.hitpoints -= (enemyDamage * 0.4);
+		if(obj_Player.haveEarthArmor){
+			obj_Player.earthArmor -= (enemyDamage * 0.4);
+		}
+		else{
+			obj_Player.hitpoints -= (enemyDamage * 0.4);
+		}
+		
 		obj_Player.playerInvinciblity = true;
 		obj_Player.alarm[2] = room_speed * 1;
 		

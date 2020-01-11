@@ -13,6 +13,6 @@ canFire = true;
 burstFire = true;
 burstFireCounter = 0;
 
-manaValue = 10;
+manaValue = 15;
 
 hitpoints = 20;

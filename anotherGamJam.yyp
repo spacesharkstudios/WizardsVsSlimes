@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "02eeab8e-5dbb-4110-b346-5f2588046de6",
+            "Value": {
+                "id": "eeaa14ac-ae13-49b3-9c84-c7fda54057cb",
+                "resourcePath": "objects\\obj_EarthSpike\\obj_EarthSpike.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "05304629-14d3-4ac1-a669-d9f0a6082837",
             "Value": {
                 "id": "f9ba25b5-168d-48a9-9255-bfe5ddb7f5b5",
@@ -83,6 +91,14 @@
             "Value": {
                 "id": "94314a45-0f12-4bd4-8b8d-9ad0cab3fe53",
                 "resourcePath": "sprites\\spr_PlayerEarth_Jump\\spr_PlayerEarth_Jump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "07dc4a8a-8d95-472c-a847-2b794a692e3c",
+            "Value": {
+                "id": "9ef915d6-306b-483c-8024-212373517702",
+                "resourcePath": "sprites\\spr_PlayerFire_basicAttack\\spr_PlayerFire_basicAttack.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -423,6 +439,14 @@
             }
         },
         {
+            "Key": "345b83b1-48e9-495e-802e-20b3b3b68096",
+            "Value": {
+                "id": "9232e885-e29f-498e-ad7b-e15b79e2c56e",
+                "resourcePath": "objects\\obj_LightningBolt\\obj_LightningBolt.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "34bc4756-f65c-4808-acd3-8b306a0917f6",
             "Value": {
                 "id": "568a319f-a4db-44c0-800d-c42716d9ff33",
@@ -452,14 +476,6 @@
                 "id": "de68b70c-80f0-4890-bb45-e940c223371d",
                 "resourcePath": "views\\38bc51b7-cdb4-425e-b4d3-e11504ebee0f.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "38d12c43-e1b3-4585-b315-1429e01ec98b",
-            "Value": {
-                "id": "b6aada2c-d1e7-4830-bc4c-3814636eaa94",
-                "resourcePath": "objects\\obj_healthPotion\\obj_healthPotion.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -623,6 +639,14 @@
             }
         },
         {
+            "Key": "5c5ac688-4dc6-42c8-a722-ec24a3ce5143",
+            "Value": {
+                "id": "b037b594-2ba6-4d23-b5f5-81c43b0e99b4",
+                "resourcePath": "objects\\obj_Attack_Fire\\obj_Attack_Fire.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5d84fabb-b56b-4689-b7fb-9e7d05349218",
             "Value": {
                 "id": "41b66216-a869-4fd3-8d06-2a13d6a671d5",
@@ -692,14 +716,6 @@
                 "id": "c5f597d6-abb2-4207-85a4-9e344b6bd091",
                 "resourcePath": "sounds\\bgm_lose\\bgm_lose.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "69f577d9-9d15-491b-837d-30c9ebd4f230",
-            "Value": {
-                "id": "a32f78d4-94c0-4ba5-8730-886cc48067fa",
-                "resourcePath": "objects\\obj_ManaPotion\\obj_ManaPotion.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -791,14 +807,6 @@
             }
         },
         {
-            "Key": "74125faf-de13-4f97-9e82-739fa8adade9",
-            "Value": {
-                "id": "bd74f0e4-d8cb-42b5-a14f-8a133ab0bd8e",
-                "resourcePath": "rooms\\Test1\\Test1.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "74425519-72d1-44e2-8c9d-02edc9a388cb",
             "Value": {
                 "id": "ec205ae6-8fa2-4284-ae07-32dd18c1b3cc",
@@ -812,14 +820,6 @@
                 "id": "211db323-23c2-4eb9-9808-c25782b70728",
                 "resourcePath": "shaders\\shdr_paletteSwap\\shdr_paletteSwap.yy",
                 "resourceType": "GMShader"
-            }
-        },
-        {
-            "Key": "7a82b295-bbf2-4c36-b52f-3b2b43213e7b",
-            "Value": {
-                "id": "d49f343f-6e0d-437f-82a0-5a6d7d7ac8c5",
-                "resourcePath": "objects\\obj_Attack_Fire\\obj_Attack_Fire.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1007,6 +1007,14 @@
             }
         },
         {
+            "Key": "97b5f881-6d9d-4ede-83e6-7c1d4f444bf9",
+            "Value": {
+                "id": "71ddaf22-3bda-41b4-b2b2-b51cc49cc30b",
+                "resourcePath": "sprites\\spr_PlayerAir_LightningEffect1\\spr_PlayerAir_LightningEffect1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "97e0f280-456f-4265-84d1-879b90cc2c8b",
             "Value": {
                 "id": "862e5329-fe55-452e-9882-624397a9e27a",
@@ -1108,6 +1116,14 @@
                 "id": "99d5a049-71c5-42ef-88e2-336cc6325f43",
                 "resourcePath": "views\\a51f1a43-14af-429e-b186-c7cb606ec5d7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a5b9706c-1cfd-46f8-8eba-d315288c5a36",
+            "Value": {
+                "id": "cbf0b168-dda0-488a-9284-04a79f06763a",
+                "resourcePath": "sprites\\spr_EarthSpike\\spr_EarthSpike.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

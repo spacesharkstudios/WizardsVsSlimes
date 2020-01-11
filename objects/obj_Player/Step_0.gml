@@ -1,16 +1,19 @@
 /// @description Player Controls
 
-//handles player death
-if (god_mode != true && hitpoints == 0) {
-	instance_destroy();
-}
-
 // Get Inputs
 scr_GetInputs(0);
 
 #region Movement
 // Set velocity_x
-if(can_move){
+if(dashActivate){
+	
+	velocity_x = facing * dashspd;
+	
+	
+	
+	
+}
+else if(can_move){
 	velocity_x = (input_right - input_left) * spd;
 } else {
 	velocity_x = 0;
@@ -82,13 +85,11 @@ if(input_attack && can_attack){
 	can_attack = false;
 	alarm[1] = attackTimer;
 	
-	// Handling fire passive
-	if(state == Wizards.fire){
-		if(firePassive < 3){
-			firePassive++;
-		}
-	}
 	scr_Attack();
+}
+
+if(firePassive >= 1){
+	alarm[4] = room_speed * 5;
 }
 
 
@@ -96,6 +97,13 @@ if(input_attack && can_attack){
 if(input_specialAttack1 || input_specialAttack2){
 	scr_SpecialAttack(input_specialAttack1, input_specialAttack2);
 }
+
+if(haveEarthArmor && (earthArmor <= 0)){
+	haveEarthArmor = false;
+}
+
+
+
 #endregion
 
 // Physics calculations

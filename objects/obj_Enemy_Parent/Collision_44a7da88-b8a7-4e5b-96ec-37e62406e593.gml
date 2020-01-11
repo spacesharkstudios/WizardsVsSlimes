@@ -1,5 +1,7 @@
 
 if(!invincible){
+	
+	
 	invincible = true;
 	white_flash = true;
 	alarm[0] = invinciblity_timer;

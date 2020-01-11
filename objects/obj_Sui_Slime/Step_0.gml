@@ -4,7 +4,7 @@ event_inherited();
 
 //image_speed = sign(velocity_x);
 
-if(can_move){
+if(active){
 	// movement
 	if(!grounded){
 

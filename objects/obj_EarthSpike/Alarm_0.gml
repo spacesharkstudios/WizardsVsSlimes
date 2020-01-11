@@ -1,0 +1,2 @@
+/// @damage enemy
+initialMoving = false;

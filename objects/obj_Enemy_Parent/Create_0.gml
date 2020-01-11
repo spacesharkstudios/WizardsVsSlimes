@@ -10,6 +10,7 @@ waterHealthGain = 10;	// water passive
 
 burning = false;
 didYouExplode = true;
+electrocute = false;
 
 bubblePrison = false;
 originY = 0;

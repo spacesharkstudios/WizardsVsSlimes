@@ -11,7 +11,7 @@ facing = 1;
 
 canFire = true;
 
-manaValue = 10;
+manaValue = 25;
 
 animate_attack = false;
 

@@ -11,7 +11,9 @@
         "5138d46b-f9ee-4876-8e6a-d8aa4e0ee5c6",
         "c804fdc8-e210-4076-9ba6-11fa78c5c9f3",
         "b5f9e392-ded6-4a96-8a58-c8229e152280",
-        "08579e26-42ce-4118-aaa2-9353e74e7626"
+        "08579e26-42ce-4118-aaa2-9353e74e7626",
+        "02eeab8e-5dbb-4110-b346-5f2588046de6",
+        "345b83b1-48e9-495e-802e-20b3b3b68096"
     ],
     "filterType": "GMObject",
     "folderName": "Specials",
