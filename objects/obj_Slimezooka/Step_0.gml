@@ -4,7 +4,7 @@ event_inherited();
 if(instance_exists(obj_Player)){
 	if(active){
 		switch(state){
-			case states.idle:
+			case SZ_states.idle:
 				// sit still, set the sprite to idle animation
 				// after a timer, random chance to switch to partol
 				// can transition into partol, hit, and alerted
@@ -16,17 +16,17 @@ if(instance_exists(obj_Player)){
 				if(state_switch && irandom(100) = 3){
 					alarm[5] = 200;
 					state_switch = false
-					state = states.patrol;
+					state = SZ_states.patrol;
 				}
 				// switch to alerted
 				if(point_distance(x, y, obj_Player.x, obj_Player.y) <= alert_radius){
 					alarm[5] = 15;
 					state_switch = false;
-					state = states.alerted;
+					state = SZ_states.alerted;
 				}
 				
 				break;
-			case states.patrol:
+			case SZ_states.patrol:
 				// move to the left or right for a pre-defined length and then transition into idle
 				// set sprite to moving
 				// can transition into idle, hit, and alerted
@@ -39,17 +39,17 @@ if(instance_exists(obj_Player)){
 					alarm[5] = irandom_range(200, 240);
 					state_switch = false;
 					facing = -facing;
-					state = states.idle;
+					state = SZ_states.idle;
 				}
 				// switch to alerted
 				if(point_distance(x, y, obj_Player.x, obj_Player.y) <= alert_radius){
 					alarm[5] = 15;
 					state_switch = false;
-					state = states.alerted;
+					state = SZ_states.alerted;
 				}
 				
 				break;
-			case states.attack:
+			case SZ_states.attack:
 				// sit still and charge attack, set sprite to attacking
 				// after attack is at a certain point, fire projectile
 				// can transition into agro and hit
@@ -60,11 +60,11 @@ if(instance_exists(obj_Player)){
 				if(state_switch){
 					state_switch = false;
 					alarm[5] = attack_cd;
-					state = states.agro;
+					state = SZ_states.agro;
 				}
 				
 				break;
-			case states.alerted:
+			case SZ_states.alerted:
 				// sit still and "notice the player"
 				// after a time period, transition into agro
 				// can transition into agro, attacking, and hit
@@ -73,11 +73,11 @@ if(instance_exists(obj_Player)){
 				
 				// switch to agro
 				if(state_switch){
-					state = states.agro;
+					state = SZ_states.agro;
 				}
 				
 				break;
-			case states.agro:
+			case SZ_states.agro:
 				// attempt to maintain a distance from the player
 				// if the player is too close, move away
 				// if the player is too far, move closer
@@ -103,13 +103,13 @@ if(instance_exists(obj_Player)){
 				
 				if(point_distance(x, y, obj_Player.x, obj_Player.y) <= attack_range && state_switch){
 					state_switch = false;
-					state = states.attack;
+					state = SZ_states.attack;
 					facing = sign(obj_Player.x - x);
 					alarm[4] = 24;
 				}
 				
 				break;
-			case states.hit:
+			case SZ_states.hit:
 				// brief hitstun and knockback
 				// set the flag to flash white
 				// after a time delay, remove the flag and transition

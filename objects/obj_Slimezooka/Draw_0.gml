@@ -7,5 +7,5 @@ if(white_flash){
 }
 
 //draw_text(x, y - 8, hitpoints);
-draw_text_ext_transformed(x - 4, y - 16, hitpoints,
+draw_text_ext_transformed(x - 4, y - 16, point_distance(x, y, obj_Player.x, obj_Player.y) <= alert_radius,
 10, 100000, .5, .5, 0);

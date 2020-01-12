@@ -3,74 +3,95 @@ event_inherited();
 
 if(instance_exists(obj_Player)){
 	if(active){
-		
-		// controls facing variable
-		if(x > obj_Player.x){
-			facing = -1;
-			image_xscale = 1;
+		switch(state){
+			case MG_states.idle:
+				// play idle animation and sit still
+				// can transition into alert and hit
+				
+				sprite_index = spr_MachineGunSlime_Idle;
+				velocity_x = 0;
+				
+				// look for the player
+				if(collision_line(x, y, x + -detect_range * facing, y, obj_Player, false, true)){
+					// check for walls in between the agent and the player
+					var _list = ds_list_create();
+					var _num = collision_line_list(x, y, x + -detect_range * facing, y, obj_Wall, false, true, _list, false);
+					if(_num > 0){
+						for(i = 0; i < _num; i++){
+							var dist_to_wall = abs(x - ds_list_find_value(_list, i).x);
+							var dist_to_player = abs(x - obj_Player.x);
+							if(dist_to_player < dist_to_wall){
+								state_switch = true;
+							}
+						}
+						ds_list_destroy(_list);
+					} else {
+						state_switch = true;
+					}
+				}
+				
+				if(state_switch){
+					state = MG_states.alert;
+				}
+				break;
+			case MG_states.alert:
+				// face the player, play the idle animation
+				// can transition into shoot and idle and hit
+				
+				sprite_index = spr_MachineGunSlime_Idle;
+				
+				facing = sign(x - obj_Player.x);
+				
+				if(collision_line(x, y, x + -detect_range * facing * 2, y, obj_Player, false, true) && alarm[5] == -1){
+					// check for walls in between the agent and the player
+					var _list = ds_list_create();
+					var _num = collision_line_list(x, y, x + -detect_range * facing * 2, y, obj_Wall, false, true, _list, false);
+					if(_num > 0){
+						for(i = 0; i < _num; i++){
+							var dist_to_wall = abs(x - ds_list_find_value(_list, i).x);
+							var dist_to_player = abs(x - obj_Player.x);
+							if(dist_to_player < dist_to_wall){
+								state_switch = true;
+								alarm[4] = idle_return_time;
+							}
+						}
+						ds_list_destroy(_list);
+					} else {
+						state_switch = true;
+						alarm[4] = idle_return_time;
+					}
+				} else {
+					state_switch = false;
+				}
+				
+				// wait an amount of time before going idle again
+				if(facing = 0) facing = 1;
+				if(state_switch){
+					state = MG_states.shoot;
+					num_shots_left = 3;
+				}
+				break;
+			case MG_states.shoot:
+				// play the shoot animation and shoot three bullets and then transition
+				// can transition into alert and idle and hit
+				
+				sprite_index = spr_MachineGunSlime_Shooting;
+				
+				if (num_shots_left == 0 && state_switch){
+					state = MG_states.alert;
+					alarm[5] = burst_delay;
+					state_switch = false;
+				}
+				
+				break;
+			case MG_states.hit:
+				// set flag to flash white and then 
+				// can transition into idle and alert
+				
+				if(!invincible) state = MG_states.alert;
+				
+				break;
 		}
-		else{
-			facing = 1;
-			image_xscale = -1;
-		}
-		
-		// Am I close enough to stop moving and attack?
-		if (distance_to_object(obj_Player) < 150) {
-			gotThere = true;
-			velocity_x = 0;
-		// Is there an invisible wall?
-		} else if(place_meeting(x + velocity_x, y, obj_WallAI)){
-			while(!place_meeting(x + sign(velocity_x), y, obj_WallAI)){
-				x += sign(velocity_x);
-			}
-			velocity_x = 0;
-		}
-		// Should I move left or right?
-		else{
-			velocity_x = facing * spd;
-			gotThere = false;
-		}
-			
-			
-		
-		// working somehow
-		if(burstFire && gotThere){
-			sprite_index = spr_MachineGunSlime_Shooting;
-		}
-		else{
-			sprite_index = spr_MachineGunSlime_Idle;
-		}
-		
-		
-		if(canJump){
-			if((y - obj_Player.y) > 20){
-				canJump = false;
-				alarm[3] = room_speed * 2;
-				velocity_y += -8;
-			}
-		}
-		
-		
-		// Attacks player with burstfire
-		if(gotThere && burstFire){
-			// firing 4 round burst
-			if(canFire) {
-				bullet = instance_create_layer(x + (sign(facing) * 23), y + 1, layer, obj_Bullet);
-				bullet.myFacing = facing;
-				canFire = false;
-				burstFireCounter++;
-				alarm[1] = room_speed * 0.07;
-			}
-			// reset between bursts
-			if(burstFireCounter = 3){
-				burstFireCounter = 0;
-				burstFire = false
-				alarm[2] = room_speed * 1;
-			}
-		}
-		
-	}
-	else{
-		sprite_index = spr_MachineGunSlime_Idle;
+		image_xscale = facing;
 	}
 }

@@ -1,5 +1,3 @@
-
-
 event_inherited();
 
 active = true;
@@ -16,3 +14,12 @@ burstFireCounter = 0;
 manaValue = 15;
 
 hitpoints = 20;
+
+enum MG_states{
+	idle,
+	alert,
+	shoot,
+	hit
+}
+
+state = MG_states.idle;

@@ -21,7 +21,7 @@ state_switch = false;
 alarm[5] = irandom(240);
 
 
-enum states{
+enum SZ_states{
 	idle,
 	patrol,
 	attack,
@@ -29,4 +29,4 @@ enum states{
 	hit,
 	agro
 }
-state = states.idle;
+state = SZ_states.idle;
