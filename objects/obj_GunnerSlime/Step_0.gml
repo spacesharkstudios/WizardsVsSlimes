@@ -42,6 +42,8 @@ if(instance_exists(obj_Player)){
 				
 				facing = sign(x - obj_Player.x);
 				
+				velocity_x = 0;
+				
 				if(collision_line(x, y, x + -detect_range * facing * 2, y, obj_Player, false, true) && alarm[5] == -1){
 					// check for walls in between the agent and the player
 					var _list = ds_list_create();
@@ -74,6 +76,8 @@ if(instance_exists(obj_Player)){
 			case MG_states.shoot:
 				// play the shoot animation and shoot three bullets and then transition
 				// can transition into alert and idle and hit
+				
+				velocity_x = 0;
 				
 				sprite_index = spr_MachineGunSlime_Shooting;
 				

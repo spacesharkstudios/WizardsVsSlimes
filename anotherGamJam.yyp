@@ -87,22 +87,6 @@
             }
         },
         {
-            "Key": "06f0564e-f864-4d91-9979-60c9d6ad4882",
-            "Value": {
-                "id": "94314a45-0f12-4bd4-8b8d-9ad0cab3fe53",
-                "resourcePath": "sprites\\spr_PlayerEarth_Jump\\spr_PlayerEarth_Jump.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "07dc4a8a-8d95-472c-a847-2b794a692e3c",
-            "Value": {
-                "id": "9ef915d6-306b-483c-8024-212373517702",
-                "resourcePath": "sprites\\spr_PlayerFire_basicAttack\\spr_PlayerFire_basicAttack.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "08579e26-42ce-4118-aaa2-9353e74e7626",
             "Value": {
                 "id": "d14cc6bd-4bc4-4dfd-831f-7b1828193557",
@@ -124,14 +108,6 @@
                 "id": "360fdd13-c67f-41c0-8ba4-2530063b2625",
                 "resourcePath": "views\\0abe3b6c-c90e-49cc-a9ae-d8a27524fa20.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "0c3f41d6-1757-4bbc-9526-c1d5b120224a",
-            "Value": {
-                "id": "d0496d78-f73e-4e04-869b-ea89b94eb99d",
-                "resourcePath": "sprites\\spr_PlayerFire_Jump\\spr_PlayerFire_Jump.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -207,6 +183,14 @@
             }
         },
         {
+            "Key": "16e9e187-9950-46b6-8f78-02a4a7b9271f",
+            "Value": {
+                "id": "ced9504c-762b-42f5-ab27-9b7bfe4b5061",
+                "resourcePath": "sprites\\spr_Caves\\spr_Caves.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "16f3fe2d-b2da-4cf8-bf9a-af619946c791",
             "Value": {
                 "id": "c1e9963c-085e-406a-ae2e-ec194825707e",
@@ -239,27 +223,11 @@
             }
         },
         {
-            "Key": "1a26a33d-8360-4274-8ab5-55cf7ece2cf8",
-            "Value": {
-                "id": "dc752167-4a12-476a-adcb-47e78c6bc079",
-                "resourcePath": "sprites\\spr_PlayerAir_Attack\\spr_PlayerAir_Attack.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "1a5cc88b-1500-44f3-bde1-ca68741c1753",
             "Value": {
                 "id": "30b52e5b-9e7d-4d36-8557-12dbaae19f83",
                 "resourcePath": "scripts\\scr_DamagePlayer\\scr_DamagePlayer.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "1a6901bf-4a6f-4d41-aae4-c8ab9dd0569a",
-            "Value": {
-                "id": "ebdd48eb-ea7d-495c-8c5a-b82866264bb1",
-                "resourcePath": "sprites\\spr_PlayerEarth_AttackEffect\\spr_PlayerEarth_AttackEffect.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -292,14 +260,6 @@
                 "id": "485cfe2d-ddca-45d6-9161-d6d36ecd4b37",
                 "resourcePath": "objects\\obj_Slime_Spawner\\obj_Slime_Spawner.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "21f476eb-7d9c-45c5-8ba0-28d82bfed63d",
-            "Value": {
-                "id": "48247d74-9f93-4176-9989-277fe5fe73b5",
-                "resourcePath": "sprites\\spr_PlayerWater_Run\\spr_PlayerWater_Run.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -359,18 +319,10 @@
             }
         },
         {
-            "Key": "2a69b66a-753a-40a9-a518-5bc7877a109c",
+            "Key": "2b14e1c5-7d95-4eee-a54a-4813ba4eb1c3",
             "Value": {
-                "id": "23d2e9da-ec44-4133-9583-8228b001e594",
-                "resourcePath": "sprites\\spr_PlayerWater_Idle\\spr_PlayerWater_Idle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2aa9269f-e39e-4446-9df6-0e0db9ad3c81",
-            "Value": {
-                "id": "3a57d689-e9f7-4bce-bcc4-137b1e175a4b",
-                "resourcePath": "sprites\\spr_PlayerFire_Attack\\spr_PlayerFire_Attack.yy",
+                "id": "f400f9e3-b20c-4fcb-a16f-76189d7fa68f",
+                "resourcePath": "sprites\\spr_PlayerAttack_Earth\\spr_PlayerAttack_Earth.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -455,14 +407,6 @@
             }
         },
         {
-            "Key": "35f585fc-9d9e-46c6-98f5-fcdf276529f0",
-            "Value": {
-                "id": "3e0719d2-7bf7-4c11-82e3-c3627c3a3c05",
-                "resourcePath": "sprites\\spr_PlayerAir_Run\\spr_PlayerAir_Run.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "3606ad6f-946b-4632-afcc-5a3120def6c0",
             "Value": {
                 "id": "86efbe82-8a07-4567-ba4f-6ab3641666fd",
@@ -476,14 +420,6 @@
                 "id": "de68b70c-80f0-4890-bb45-e940c223371d",
                 "resourcePath": "views\\38bc51b7-cdb4-425e-b4d3-e11504ebee0f.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "39d51e3d-7a0d-43c1-ba02-6da4b1940ab4",
-            "Value": {
-                "id": "a32f7746-7439-416e-b8f6-c392730cd088",
-                "resourcePath": "sprites\\spr_PlayerAir_Jump\\spr_PlayerAir_Jump.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -599,6 +535,14 @@
             }
         },
         {
+            "Key": "5546fd57-bb17-4db7-a25e-b45ad2a590a5",
+            "Value": {
+                "id": "812a2d56-6ded-40cd-b54b-808618f51129",
+                "resourcePath": "tilesets\\til_Caves_Static1\\til_Caves_Static1.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "5640f064-ed59-4726-8526-6ea64a9ebfc0",
             "Value": {
                 "id": "a2249831-ea27-4c27-952d-b1e1982a4cea",
@@ -644,14 +588,6 @@
                 "id": "b037b594-2ba6-4d23-b5f5-81c43b0e99b4",
                 "resourcePath": "objects\\obj_Attack_Fire\\obj_Attack_Fire.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "5d84fabb-b56b-4689-b7fb-9e7d05349218",
-            "Value": {
-                "id": "41b66216-a869-4fd3-8d06-2a13d6a671d5",
-                "resourcePath": "sprites\\spr_PlayerFire_Run\\spr_PlayerFire_Run.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -759,14 +695,6 @@
             }
         },
         {
-            "Key": "6f77d2eb-faf1-4cd0-9ab6-ed56e0e820b9",
-            "Value": {
-                "id": "5135a868-6f87-4a19-88db-085689ecc64d",
-                "resourcePath": "sprites\\spr_PlayerAir_Idle\\spr_PlayerAir_Idle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "706f8b7e-a880-4650-b8c7-330bd9ac51ac",
             "Value": {
                 "id": "eef9770a-e06f-4de4-a23b-36e6b7d8e7ce",
@@ -855,14 +783,6 @@
             }
         },
         {
-            "Key": "8104be94-960e-4cc1-aeae-67b449f4f5d7",
-            "Value": {
-                "id": "5aa32b24-0031-43e3-92dc-91c4ba097a1c",
-                "resourcePath": "sprites\\spr_PlayerEarth_Run\\spr_PlayerEarth_Run.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "81e98254-9ca8-4ee0-a9fe-a2c9e60624a5",
             "Value": {
                 "id": "ac677126-ed1a-4aeb-b677-9f495e233773",
@@ -895,19 +815,27 @@
             }
         },
         {
+            "Key": "85eb37a4-67b9-4067-a3c3-8a40deb24071",
+            "Value": {
+                "id": "6cddf2cd-0fca-4871-9c9f-df0665afee02",
+                "resourcePath": "sprites\\spr_PlayerAttack_Water\\spr_PlayerAttack_Water.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "87b67507-93bc-420c-b4e1-6a0be815a331",
+            "Value": {
+                "id": "4a506682-aa54-4157-b9a1-c3cd94695a0b",
+                "resourcePath": "sprites\\spr_ColorPalette_reference\\spr_ColorPalette_reference.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8a13f17f-9213-402d-809d-a428cb64990b",
             "Value": {
                 "id": "78b5fdc9-d0b1-4c6a-baad-0113e2b0b51a",
                 "resourcePath": "views\\8a13f17f-9213-402d-809d-a428cb64990b.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "8d0178bc-58ef-41e1-9a15-b479eae9932a",
-            "Value": {
-                "id": "ca9a81a5-8f00-4434-90fd-852bb23aad01",
-                "resourcePath": "sprites\\spr_PlayerWater_AttackEffect\\spr_PlayerWater_AttackEffect.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1031,22 +959,6 @@
             }
         },
         {
-            "Key": "98e733ab-e3c8-4477-9452-6ffa033143b5",
-            "Value": {
-                "id": "4813c4de-c656-40a4-a3de-7a59a508470f",
-                "resourcePath": "sprites\\spr_PlayerAir_AttackEffect\\spr_PlayerAir_AttackEffect.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "9914122a-5df8-4569-8cf3-34df8e56aa92",
-            "Value": {
-                "id": "f6525af1-71f2-40a5-8420-bb4f2403d42e",
-                "resourcePath": "sprites\\spr_PlayerFire_AttackEffect\\spr_PlayerFire_AttackEffect.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "9aae8031-3324-42a6-b88d-198f99e6164a",
             "Value": {
                 "id": "3d5b0f85-46a6-4cd2-a6bb-aca154c528ba",
@@ -1076,14 +988,6 @@
                 "id": "2087c51e-bb9d-49a0-9976-272b359ccfda",
                 "resourcePath": "objects\\obj_Bullet\\obj_Bullet.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "9f03d54c-d299-46c1-91a5-c4323ce1494a",
-            "Value": {
-                "id": "48deb8e3-9491-41b2-b0a0-194421008083",
-                "resourcePath": "views\\9f03d54c-d299-46c1-91a5-c4323ce1494a.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -1231,14 +1135,6 @@
             }
         },
         {
-            "Key": "b2c544f6-64ae-4521-ba42-cf1945088b3c",
-            "Value": {
-                "id": "00765269-56ea-4fcb-be71-6ef993df7975",
-                "resourcePath": "sprites\\spr_PlayerFire_Idle\\spr_PlayerFire_Idle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b30d8c53-fc3e-4f18-9390-2dfd03bbe060",
             "Value": {
                 "id": "34f244b0-3888-477e-96c8-9cdfe283e3e8",
@@ -1284,14 +1180,6 @@
                 "id": "514b08ee-6091-4f83-b706-2fc84afdba63",
                 "resourcePath": "sprites\\spr_PlayerFire_FireBallExplosion\\spr_PlayerFire_FireBallExplosion.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "b8f10819-241d-4ff3-b622-627b31375e0a",
-            "Value": {
-                "id": "abcbaa9f-3936-4201-81e9-9211320b08db",
-                "resourcePath": "views\\b8f10819-241d-4ff3-b622-627b31375e0a.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -1375,6 +1263,14 @@
             }
         },
         {
+            "Key": "c084d7a8-b2b6-405b-94a6-cf7ad9bea525",
+            "Value": {
+                "id": "e8ae0ffc-9235-4ce3-8bad-5c44624741d7",
+                "resourcePath": "sprites\\spr_PlayerAttack_Fire\\spr_PlayerAttack_Fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c27d951f-1244-45ce-8fe9-e2d7ab34009a",
             "Value": {
                 "id": "39175b70-d583-4f09-9059-a7baf99a349d",
@@ -1439,14 +1335,6 @@
             }
         },
         {
-            "Key": "ce3a3441-8068-46fd-9664-ae7033f1151f",
-            "Value": {
-                "id": "ddfacfd8-a195-4909-8600-0886e99fb7e6",
-                "resourcePath": "sprites\\spr_PlayerWater_Jump\\spr_PlayerWater_Jump.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "d079f081-fa48-45f3-809c-76ee4582cfe3",
             "Value": {
                 "id": "a7a6c705-9124-46a4-bb2d-14c92bf2fc53",
@@ -1471,18 +1359,18 @@
             }
         },
         {
+            "Key": "d48c9ceb-e6d3-4faa-a4f2-6a5fd33ee946",
+            "Value": {
+                "id": "ed192012-7ac8-42a2-b6e1-1e442bbeda0c",
+                "resourcePath": "sprites\\spr_PlayerAttack_Air\\spr_PlayerAttack_Air.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d5fccfe4-2fab-4923-a3e8-4c7bf334b614",
             "Value": {
                 "id": "b025f648-adf4-4ed8-8ed4-a24cdc26e959",
                 "resourcePath": "views\\d5fccfe4-2fab-4923-a3e8-4c7bf334b614.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "d79edc63-2a13-4ec1-9bd4-0838d3309aac",
-            "Value": {
-                "id": "d2de6c0d-bd91-4479-a082-d3fa48955fd7",
-                "resourcePath": "views\\d79edc63-2a13-4ec1-9bd4-0838d3309aac.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1551,14 +1439,6 @@
             }
         },
         {
-            "Key": "e1df2ff2-e976-47d6-89bf-cff631a8dbca",
-            "Value": {
-                "id": "1b764477-f7a4-491a-bc3c-4e1f2ed5b951",
-                "resourcePath": "sprites\\spr_PlayerEarth_Idle\\spr_PlayerEarth_Idle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "e25fa086-4a08-4d37-8fb9-2bb2315157e5",
             "Value": {
                 "id": "e338213f-2209-44b9-97b3-17b0252b2473",
@@ -1580,14 +1460,6 @@
                 "id": "1104a6cd-a7ab-4e3d-a656-46c9267c3e76",
                 "resourcePath": "sprites\\spr_Slimezooka_Idle\\spr_Slimezooka_Idle.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e55e061e-c6e6-4f13-bd48-74b937ba2f70",
-            "Value": {
-                "id": "2a78ba0b-5319-48f6-97fc-ec5b4af809ff",
-                "resourcePath": "views\\e55e061e-c6e6-4f13-bd48-74b937ba2f70.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
