@@ -8,5 +8,5 @@ if(white_flash){
 }
 
 //draw_text(x, y - 8, hitpoints);
-draw_text_ext_transformed(x - 4, y - 16, alarm[5],
+draw_text_ext_transformed(x - 4, y - 16, facing,
 10, 100000, .5, .5, 0);
