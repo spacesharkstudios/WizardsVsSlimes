@@ -29,7 +29,10 @@ airSpecialCost = 1;
 // special fire damage values
 fireballDamage = 5;
 fireballExplosionDamage = 10;
-fireSelfExplosion = 19;
+fireSelfExplosion = 10;
+flamethrowerDamage = 5;
+cumbust = false;
+fireBuff = false;
 
 // special earth values
 haveEarthArmor = false;
@@ -49,7 +52,7 @@ vNormal = 0;
 paletteSwapSampler = shader_get_sampler_index(shdr_paletteSwap, "Palette");
 texturePalette = sprite_get_texture(spr_shaderTexture, 0);
 
-state = Wizards.water;
+state = Wizards.fire;
 
 enum Wizards{
 	fire,

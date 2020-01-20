@@ -17,14 +17,35 @@ if(instance_exists(obj_Player)) {
 			}
 			
 			
-			// self explosion special
-			else if(attack2){
+			
+			
+			if(attack2 && (!obj_Player.fireBuff)){
 				if(obj_Player.mana >= obj_Player.fireSpecialCost){
 					obj_Player.mana -= obj_Player.fireSpecialCost;
-					obj_Player.hitpoints -= 20;
-					instance_create_layer(x, y, layer, obj_SelfExplosion);
+					
+					obj_Player.fireBuff = true;
+					
+					
 				}
 			}
+			else if(attack2 && (obj_Player.fireBuff)){
+				
+				obj_Player.fireBuff = false;
+				
+			}
+			
+			
+			
+			
+			
+			
+			 //flamethrower special
+			//else if(attack2){
+			//	if(obj_Player.mana >= obj_Player.fireSpecialCost){
+			//		obj_Player.mana -= obj_Player.fireSpecialCost;
+			//		instance_create_layer(x, y, layer, obj_Flmaethrower);
+			//	}
+			//}
 			
 			
 			
@@ -37,13 +58,23 @@ if(instance_exists(obj_Player)) {
 			//	}
 			//}
 			
+			
+			
+			
+			
+			
+			// self explosion special
+			//else if(attack2){
+			//	if(obj_Player.mana >= obj_Player.fireSpecialCost){
+			//		obj_Player.mana -= obj_Player.fireSpecialCost;
+			//		obj_Player.hitpoints -= 20;
+			//		instance_create_layer(x, y, layer, obj_SelfExplosion);
+			//	}
+			//}
+			
+
+			
 			break;
-			
-			
-			
-			
-			
-			
 			
 		case Wizards.water:
 			// Create the water specials
@@ -53,12 +84,6 @@ if(instance_exists(obj_Player)) {
 				if(obj_Player.mana >= obj_Player.waterSpecialCost){
 					obj_Player.mana -= obj_Player.waterSpecialCost;
 					
-					if((obj_Player.hitpoints + 30) > 100){
-						obj_Player.hitpoints = 100;
-					}
-					else{
-						obj_Player.hitpoints += 30;
-					}
 					instance_create_layer(x, y, "Effects", obj_WaterHeal);
 				}
 			}
