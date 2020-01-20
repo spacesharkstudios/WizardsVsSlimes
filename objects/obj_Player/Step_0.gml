@@ -143,7 +143,9 @@ if(velocity_x != 0 && (grounded || landing)){
 	sprite_index = spr_player_attack;
 }
 
-
+if(instance_place(x,y,obj_EarthSpike)){
+	grounded = false;
+}
 
 // Change the color of the wizard
 rowIndex = state;

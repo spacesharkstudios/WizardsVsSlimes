@@ -30,10 +30,16 @@ if(instance_exists(obj_Player)) {
 				
 				obj_Player.fireBuff = false;
 			}
+
 			
-			
-			
-			
+			// flameLance Special
+			else if(obj_Player.attack1 && obj_Player.testSwitch){
+				
+				if(obj_Player.mana >= obj_Player.fireSpecialCost){
+					obj_Player.mana -= obj_Player.fireSpecialCost;
+					instance_create_layer(x, y, layer, obj_FlameLance);
+				}
+			}
 			
 			
 			 //flamethrower special
@@ -44,46 +50,21 @@ if(instance_exists(obj_Player)) {
 					if(!instance_exists(obj_Flamethrower)){
 						instance_create_layer(x, y, layer, obj_Flamethrower);
 					}
-					
-					
 				}
 			}
-			
-			
-			
-			
-			// combust Special
-			else if(obj_Player.attack1 && obj_Player.testSwitch){
-				
-				if(obj_Player.mana >= obj_Player.fireSpecialCost){
-					obj_Player.mana -= obj_Player.fireSpecialCost;
-					instance_create_layer(x, y, layer, obj_FlameLance);
-				}
-			}
-			
-			
-			
-			
-			
-			
-			// self explosion special
-			//else if(attack2){
-			//	if(obj_Player.mana >= obj_Player.fireSpecialCost){
-			//		obj_Player.mana -= obj_Player.fireSpecialCost;
-			//		obj_Player.hitpoints -= 20;
-			//		instance_create_layer(x, y, layer, obj_SelfExplosion);
-			//	}
-			//}
 			
 
 			
 			break;
 			
+			
+			
+			
 		case Wizards.water:
 			// Create the water specials
 			
 			// heal
-			if(attack1){
+			if(attack1 && !obj_Player.testSwitch){
 				if(obj_Player.mana >= obj_Player.waterSpecialCost){
 					obj_Player.mana -= obj_Player.waterSpecialCost;
 					
@@ -93,15 +74,49 @@ if(instance_exists(obj_Player)) {
 			
 			
 			// bubble prison Special
-			else if(attack2){
+			if(attack2 && (!obj_Player.fireBuff) && (!obj_Player.testSwitch)){
 				if(obj_Player.mana >= obj_Player.waterSpecialCost){
 					obj_Player.mana -= obj_Player.waterSpecialCost;
 					instance_create_layer(x, y, layer, obj_BubbleProjectile);
 				}
 			}
+			
+			
+			// TidalWave Special
+			else if(obj_Player.attack1 && obj_Player.testSwitch){
+				
+				if(obj_Player.mana >= obj_Player.waterSpecialCost){
+					obj_Player.mana -= obj_Player.waterSpecialCost;
+					
+					wave = instance_create_layer(x, y+10, layer, obj_TidalWave);
+					wave.facing = 1;
+					
+					wave = instance_create_layer(x, y+10, layer, obj_TidalWave);
+					wave.facing = -1;
+					
+				}
+			}
+			
+			
+			
+			// Torrent Special
+			else if(obj_Player.attack2 && obj_Player.testSwitch){
+				
+				if(obj_Player.mana >= obj_Player.waterSpecialCost){
+					obj_Player.mana -= obj_Player.waterSpecialCost;
+					instance_create_layer(x, y, layer, obj_Torrent);
+				}
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			break;
-			
-			
 			
 			
 			
