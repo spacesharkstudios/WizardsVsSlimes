@@ -31,7 +31,7 @@ fireballDamage = 5;
 fireballExplosionDamage = 10;
 fireSelfExplosion = 10;
 flamethrowerDamage = 5;
-cumbust = false;
+flamethowerActive = false;
 fireBuff = false;
 
 // special earth values
@@ -60,3 +60,10 @@ enum Wizards{
 	earth,
 	air
 }
+
+testSwitch = false;
+
+
+
+
+

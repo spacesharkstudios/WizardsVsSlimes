@@ -97,11 +97,13 @@ if(firePassive > 0){
 if(input_specialAttack1 || input_specialAttack2){
 	scr_SpecialAttack(input_specialAttack1, input_specialAttack2);
 }
+flamethowerActive = input_specialAttack2;
 
 // earth armor special code
 if(haveEarthArmor && (earthArmor <= 0)){
 	haveEarthArmor = false;
 }
+
 
 // fire buff special code
 if(fireBuff){
@@ -140,6 +142,7 @@ if(velocity_x != 0 && (grounded || landing)){
 }
 
 
+
 // Change the color of the wizard
 rowIndex = state;
 rowIndex = rowIndex mod colorSets;
@@ -153,3 +156,25 @@ if(state = Wizards.fire){
 	}
 }
 #endregion
+
+
+
+// change ability set (for testing purposes)
+if(switchButton && !testSwitch){
+	testSwitch = true;
+}
+else if(switchButton && testSwitch){
+	testSwitch = false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
