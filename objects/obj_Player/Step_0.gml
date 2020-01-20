@@ -26,10 +26,10 @@ if(velocity_x != 0){
 
 // Jump
 if(grounded && input_jump && can_move){
-	velocity_y = -9.2;
+	velocity_y = jump_force;
 }
 if(!grounded && canAirJump && numAirJumps && input_jump && can_move){ // Air wizard only
-	velocity_y = -9.2;
+	velocity_y = jump_force * .75;
 	numAirJumps --;
 }
 

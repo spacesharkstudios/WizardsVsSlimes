@@ -63,6 +63,8 @@ enum Wizards{
 
 testSwitch = false;
 
+scr_Stats();
+
 
 
 
