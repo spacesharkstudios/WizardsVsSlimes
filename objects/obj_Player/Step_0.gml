@@ -97,26 +97,30 @@ if(firePassive > 0){
 if(input_specialAttack1 || input_specialAttack2){
 	scr_SpecialAttack(input_specialAttack1, input_specialAttack2);
 }
+flamethowerActive = input_specialAttack2;
 
 // earth armor special code
 if(haveEarthArmor && (earthArmor <= 0)){
 	haveEarthArmor = false;
 }
 
+
 // fire buff special code
 if(fireBuff){
 	hitpoints -=.1;
 	firePassive = 3;
+	attack_damage = 10;
 	fireballDamage = 10;
 	fireballExplosionDamage = 20;
-	fireSelfExplosion = 20;
+	FlameLanceDamage = 20;
 	flamethrowerDamage = 10;
 	
 }
 else{
+	attack_damage = 5;
 	fireballDamage = 5;
 	fireballExplosionDamage = 10;
-	fireSelfExplosion = 10;
+	FlameLanceDamage = 10;
 	flamethrowerDamage = 5;
 }
 
@@ -140,6 +144,7 @@ if(velocity_x != 0 && (grounded || landing)){
 }
 
 
+
 // Change the color of the wizard
 rowIndex = state;
 rowIndex = rowIndex mod colorSets;
@@ -153,3 +158,25 @@ if(state = Wizards.fire){
 	}
 }
 #endregion
+
+
+
+// change ability set (for testing purposes)
+if(switchButton && !testSwitch){
+	testSwitch = true;
+}
+else if(switchButton && testSwitch){
+	testSwitch = false;
+}
+
+
+
+
+
+
+
+
+
+
+
+

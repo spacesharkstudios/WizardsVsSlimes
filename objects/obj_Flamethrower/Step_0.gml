@@ -15,6 +15,12 @@ if(instance_exists(obj_Player)){
 	if(obj_Player.state !=Wizards.fire){
 	
 		instance_destroy();
-	
 	}
+	
+	
+	if(!obj_Player.flamethowerActive || (obj_Player.mana < obj_Player.fireSpecialCost)){
+		instance_destroy();
+	}
+	
+	
 }

@@ -5,11 +5,12 @@ active = true;
 //movement
 canJump = true;
 spd = 1;
-facing = 1;
 
 canFire = true;
 burstFire = true;
 burstFireCounter = 0;
+
+facing = -facing;
 
 manaValue = 15;
 
