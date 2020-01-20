@@ -1031,6 +1031,14 @@
             }
         },
         {
+            "Key": "a16d06ab-2c1d-43c9-a539-8daa0936d798",
+            "Value": {
+                "id": "72164d22-512a-42d7-b487-483742b7be02",
+                "resourcePath": "rooms\\MainMenu\\MainMenu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a21335ef-58b7-4737-a84b-8827058db8b6",
             "Value": {
                 "id": "12ea8e01-f18f-4a0f-8ed3-29bc5ae52ba5",
