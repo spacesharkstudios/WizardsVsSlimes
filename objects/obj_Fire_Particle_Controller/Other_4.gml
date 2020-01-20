@@ -3,6 +3,8 @@ global.Fire_Particles = part_type_create();
 global.Smoke_Particles = part_type_create();
 #endregion
 
+global.Player_Particles = part_system_create_layer(layer, true);
+
 #region Fire Particles
 part_type_shape(global.Fire_Particles, pt_shape_pixel);
 part_type_size(global.Fire_Particles, 1, 1, .05, 0);
