@@ -290,7 +290,7 @@
             "Key": "266577aa-8be8-4259-8a79-65132e8e9aa1",
             "Value": {
                 "id": "9b012b98-a34f-4447-8cd5-3fc7758a16c3",
-                "resourcePath": "objects\\obj_Flmaethrower\\obj_Flmaethrower.yy",
+                "resourcePath": "objects\\obj_Flamethrower\\obj_Flamethrower.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -651,6 +651,14 @@
             "Value": {
                 "id": "bf409352-419c-4fd5-918a-1882173512e5",
                 "resourcePath": "sprites\\spr_MountianBackground\\spr_MountianBackground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "65948c79-9826-49e1-897c-546e3b87aee0",
+            "Value": {
+                "id": "924ca7ee-73ba-4ada-946c-5ee4457a6032",
+                "resourcePath": "sprites\\spr_FlameLance\\spr_FlameLance.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1124,6 +1132,14 @@
                 "id": "46077e68-b646-4ff2-a351-afd6dc96b4e7",
                 "resourcePath": "sprites\\spr_Slimezooka_Projectile\\spr_Slimezooka_Projectile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "acb50af5-73bb-4810-abda-bc6b46d7bb55",
+            "Value": {
+                "id": "6d9d9962-aace-4c9b-a37c-1ebd87678623",
+                "resourcePath": "objects\\obj_FlameLance\\obj_FlameLance.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -11,9 +11,19 @@ input_change1 = keyboard_check_pressed(ord("1"));
 input_change2 = keyboard_check_pressed(ord("2"));
 input_change3 = keyboard_check_pressed(ord("3"));
 input_change4 = keyboard_check_pressed(ord("4"));
-input_attack = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(ord("J"));
-input_specialAttack1 = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(ord("K"));
-input_specialAttack2 = keyboard_check_pressed(ord("P")) || keyboard_check_pressed(ord("L"));
+input_attack = keyboard_check_pressed(ord("I"));
+
+switchButton = keyboard_check_pressed(ord("T"));
+
+input_specialAttack1 = keyboard_check_pressed(ord("O"));
+
+if(obj_Player.testSwitch && (obj_Player.state == Wizards.fire)){
+	input_specialAttack2 = keyboard_check(ord("P"));
+}
+else{
+	input_specialAttack2 = keyboard_check_pressed(ord("P"));
+}
+
 
 
 // if gamepad is connected

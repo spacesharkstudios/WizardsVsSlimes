@@ -9,8 +9,7 @@ invinciblity_timer = room_speed * 0.5
 waterHealthGain = 10;	// water passive
 
 burning = false;
-didYouExplode = true;
-electrocute = false;
+burningTick = true;
 
 bubblePrison = false;
 originY = 0;

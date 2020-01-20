@@ -1,9 +1,7 @@
 if(!invincible){
 	invincible = true;
 	white_flash = true;
-	burning = true;
 	alarm[0] = invinciblity_timer;
-	alarm[9] = room_speed * 7;
 	alarm[10] = 10;
 	hitpoints -= obj_Player.flamethrowerDamage + (obj_Player.firePassive * 0.75 * obj_Player.flamethrowerDamage);
 	obj_Player.firePassive = 0;

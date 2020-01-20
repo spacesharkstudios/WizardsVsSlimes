@@ -9,7 +9,7 @@ if(instance_exists(obj_Player)) {
 		case Wizards.fire:
 			
 			// Fireball Special
-			if(attack1){
+			if(attack1 && !obj_Player.testSwitch){
 				if(obj_Player.mana >= obj_Player.fireSpecialCost){
 					obj_Player.mana -= obj_Player.fireSpecialCost;
 					instance_create_layer(x, y, layer, obj_Fireball);
@@ -18,20 +18,17 @@ if(instance_exists(obj_Player)) {
 			
 			
 			
-			
-			if(attack2 && (!obj_Player.fireBuff)){
+			// Firebuff special
+			if(attack2 && (!obj_Player.fireBuff) && (!obj_Player.testSwitch)){
 				if(obj_Player.mana >= obj_Player.fireSpecialCost){
 					obj_Player.mana -= obj_Player.fireSpecialCost;
 					
 					obj_Player.fireBuff = true;
-					
-					
 				}
 			}
-			else if(attack2 && (obj_Player.fireBuff)){
+			else if(attack2 && (obj_Player.fireBuff) && (!obj_Player.testSwitch)){
 				
 				obj_Player.fireBuff = false;
-				
 			}
 			
 			
@@ -40,23 +37,29 @@ if(instance_exists(obj_Player)) {
 			
 			
 			 //flamethrower special
-			//else if(attack2){
-			//	if(obj_Player.mana >= obj_Player.fireSpecialCost){
-			//		obj_Player.mana -= obj_Player.fireSpecialCost;
-			//		instance_create_layer(x, y, layer, obj_Flmaethrower);
-			//	}
-			//}
+			else if(attack2 && obj_Player.testSwitch){
+				if(obj_Player.mana >= obj_Player.fireSpecialCost){
+					obj_Player.mana -= obj_Player.fireSpecialCost;
+					
+					if(!instance_exists(obj_Flamethrower)){
+						instance_create_layer(x, y, layer, obj_Flamethrower);
+					}
+					
+					
+				}
+			}
+			
 			
 			
 			
 			// combust Special
-			//else if(obj_Player.attack2){
-			//	
-			//	if(obj_Player.mana >= obj_Player.fireSpecialCost){
-			//		obj_Player.mana -= obj_Player.fireSpecialCost;
-			//		instance_create_layer(x, y, layer, obj_Combust);
-			//	}
-			//}
+			else if(obj_Player.attack1 && obj_Player.testSwitch){
+				
+				if(obj_Player.mana >= obj_Player.fireSpecialCost){
+					obj_Player.mana -= obj_Player.fireSpecialCost;
+					instance_create_layer(x, y, layer, obj_FlameLance);
+				}
+			}
 			
 			
 			

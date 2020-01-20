@@ -2,7 +2,7 @@
     "id": "266577aa-8be8-4259-8a79-65132e8e9aa1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Flmaethrower",
+    "name": "obj_Flamethrower",
     "eventList": [
         {
             "id": "b9135936-7819-4af8-94b4-c19ff812ab24",

@@ -5,8 +5,6 @@ if(!invincible){
 	alarm[10] = 10;
 	alarm[11] = scr_Knockback(2 * obj_Player.facing, -2, id);
 	hitpoints -= obj_Player.attack_damage;
-	burning = true;
-	alarm[9] = room_speed * 7;
 	
 	// Handling fire passive
 	if(obj_Player.state == obj_Player.Wizards.fire){
