@@ -53,11 +53,11 @@ if(instance_exists(obj_Player)) {
 			
 			
 			// combust Special
-			else if(obj_Player.attack2 && obj_Player.testSwitch){
+			else if(obj_Player.attack1 && obj_Player.testSwitch){
 				
 				if(obj_Player.mana >= obj_Player.fireSpecialCost){
 					obj_Player.mana -= obj_Player.fireSpecialCost;
-					instance_create_layer(x, y, layer, obj_Combust);
+					instance_create_layer(x, y, layer, obj_FlameLance);
 				}
 			}
 			

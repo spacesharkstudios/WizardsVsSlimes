@@ -26,7 +26,6 @@ else{
 
 
 
-
 // if gamepad is connected
 if(gamepad_is_connected(controller)){
 	// gamepad inputs go here

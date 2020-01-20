@@ -109,16 +109,18 @@ if(haveEarthArmor && (earthArmor <= 0)){
 if(fireBuff){
 	hitpoints -=.1;
 	firePassive = 3;
+	attack_damage = 10;
 	fireballDamage = 10;
 	fireballExplosionDamage = 20;
-	fireSelfExplosion = 20;
+	FlameLanceDamage = 20;
 	flamethrowerDamage = 10;
 	
 }
 else{
+	attack_damage = 5;
 	fireballDamage = 5;
 	fireballExplosionDamage = 10;
-	fireSelfExplosion = 10;
+	FlameLanceDamage = 10;
 	flamethrowerDamage = 5;
 }
 

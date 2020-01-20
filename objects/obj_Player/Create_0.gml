@@ -29,7 +29,7 @@ airSpecialCost = 1;
 // special fire damage values
 fireballDamage = 5;
 fireballExplosionDamage = 10;
-fireSelfExplosion = 10;
+FlameLanceDamage = 10;
 flamethrowerDamage = 5;
 flamethowerActive = false;
 fireBuff = false;

@@ -183,6 +183,20 @@
             "value": "60",
             "varName": "idle_return_time",
             "varType": 0
+        },
+        {
+            "id": "5f861abe-7afa-4cd6-adb8-97745aa77e94",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "facing",
+            "varType": 0
         }
     ],
     "solid": false,
