@@ -130,6 +130,7 @@ else{
 
 // Physics calculations
 event_inherited();
+if(place_meeting(x, y, obj_EarthSpike)) grounded = false;
 
 #region Visuals
 image_xscale = facing;
