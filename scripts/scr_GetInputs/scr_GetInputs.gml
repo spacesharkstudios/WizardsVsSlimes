@@ -15,6 +15,7 @@ input_attack = keyboard_check_pressed(ord("I"));
 input_specialAttack1 = keyboard_check_pressed(ord("O"));
 input_specialAttack2 = keyboard_check_pressed(ord("P"));
 
+
 // if gamepad is connected
 if(gamepad_is_connected(controller)){
 	// gamepad inputs go here

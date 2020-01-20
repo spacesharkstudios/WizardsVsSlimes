@@ -5,8 +5,7 @@ if(!invincible){
 	alarm[0] = invinciblity_timer;
 	alarm[9] = room_speed * 7;
 	alarm[10] = 10;
-	alarm[11] = scr_Knockback(2 * obj_Player.facing, -2, id);
-	hitpoints -= obj_Player.fireSelfExplosion + (obj_Player.firePassive * 0.75 * obj_Player.fireSelfExplosion);
+	hitpoints -= obj_Player.flamethrowerDamage + (obj_Player.firePassive * 0.75 * obj_Player.flamethrowerDamage);
 	obj_Player.firePassive = 0;
 	
 }

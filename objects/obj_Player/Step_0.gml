@@ -88,7 +88,7 @@ if(input_attack && can_attack){
 	scr_Attack();
 }
 
-if(firePassive >= 1){
+if(firePassive > 0){
 	alarm[4] = room_speed * 5;
 }
 
@@ -98,8 +98,26 @@ if(input_specialAttack1 || input_specialAttack2){
 	scr_SpecialAttack(input_specialAttack1, input_specialAttack2);
 }
 
+// earth armor special code
 if(haveEarthArmor && (earthArmor <= 0)){
 	haveEarthArmor = false;
+}
+
+// fire buff special code
+if(fireBuff){
+	hitpoints -=.1;
+	firePassive = 3;
+	fireballDamage = 10;
+	fireballExplosionDamage = 20;
+	fireSelfExplosion = 20;
+	flamethrowerDamage = 10;
+	
+}
+else{
+	fireballDamage = 5;
+	fireballExplosionDamage = 10;
+	fireSelfExplosion = 10;
+	flamethrowerDamage = 5;
 }
 
 
