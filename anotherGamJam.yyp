@@ -1375,14 +1375,6 @@
             }
         },
         {
-            "Key": "c804fdc8-e210-4076-9ba6-11fa78c5c9f3",
-            "Value": {
-                "id": "7f2821d3-5ff5-4eea-80d9-9cff1319a8e7",
-                "resourcePath": "objects\\obj_Combust\\obj_Combust.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c8884265-9426-49d2-92c1-6e6edfc6a1df",
             "Value": {
                 "id": "656001c4-9d53-46e7-9be2-d3fb815d200e",

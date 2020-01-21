@@ -148,7 +148,7 @@ if(instance_exists(obj_Player)) {
 				if(obj_Player.mana >= obj_Player.earthSpecialCost){
 					obj_Player.mana -= obj_Player.earthSpecialCost;
 					
-					obj_Player.velocity_x += 15;
+					obj_Player.velocity_x += 15 * obj_Player.facing;
 					instance_create_layer(x, y, layer, obj_EarthPunch);
 				}
 			}

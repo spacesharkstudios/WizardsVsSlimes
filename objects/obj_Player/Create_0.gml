@@ -40,6 +40,7 @@ torrentDamage = 15;
 // special earth values
 haveEarthArmor = false;
 earthArmor = 60;
+earthPunchDamage = 10;
 
 // special air values
 dashActivate = false;
