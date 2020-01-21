@@ -151,6 +151,22 @@
             }
         },
         {
+            "Key": "0f4fc5d4-e812-4fa7-9352-afbac99c0392",
+            "Value": {
+                "id": "e31339b1-15a3-47c8-8042-75b98768be9e",
+                "resourcePath": "objects\\obj_Attack_Water\\obj_Attack_Water.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0f722dc1-9a0d-4ccd-b704-4a38f4daaca3",
+            "Value": {
+                "id": "6c726b4d-40d1-418a-9791-d805a46350dc",
+                "resourcePath": "objects\\obj_Play_Button\\obj_Play_Button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "108dd006-0660-489c-ba1c-7e19ff842127",
             "Value": {
                 "id": "e1a2db19-3a5e-49e3-b5f0-fab6a81980cc",
@@ -252,6 +268,14 @@
                 "id": "cc960b5d-3f14-4e8b-ad73-ac1eadf5fde3",
                 "resourcePath": "sprites\\spr_MachineGunSlime_Idle\\spr_MachineGunSlime_Idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "200e3a72-af5f-4514-9b5a-9f728195ea53",
+            "Value": {
+                "id": "1e597dbf-d5b4-4260-ad3a-aea2196d2573",
+                "resourcePath": "objects\\obj_EarthPunch\\obj_EarthPunch.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -380,6 +404,14 @@
                 "id": "c1128310-767e-43fc-83be-44a4c7b328b7",
                 "resourcePath": "scripts\\scr_SpecialAttack\\scr_SpecialAttack.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "33bd0a6e-0857-49fe-bcef-a0183835fa60",
+            "Value": {
+                "id": "c52dfc34-6fa6-4536-a8cd-8f83d7a02331",
+                "resourcePath": "objects\\obj_UI_Button\\obj_UI_Button.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -604,14 +636,6 @@
                 "id": "144276f7-f369-462e-8173-f0159c86ba75",
                 "resourcePath": "sounds\\sfx_player_hit\\sfx_player_hit.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "641f885f-7142-4395-ba4b-648727ea273c",
-            "Value": {
-                "id": "4d265bd1-aacb-4984-b6a0-682cd07cfb21",
-                "resourcePath": "rooms\\TestHamilton\\TestHamilton.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -905,7 +929,7 @@
         {
             "Key": "934ea95f-3783-463f-bd42-f4ec8e4e0b55",
             "Value": {
-                "id": "11f53af9-26c9-4b25-9a37-d165ab5b82a1",
+                "id": "57e0120e-393a-44f7-8be2-4bccf639feb8",
                 "resourcePath": "rooms\\Level1\\Level1.yy",
                 "resourceType": "GMRoom"
             }
@@ -1025,7 +1049,7 @@
         {
             "Key": "a16d06ab-2c1d-43c9-a539-8daa0936d798",
             "Value": {
-                "id": "bf8d2ee7-718c-4ada-87eb-da8a96048696",
+                "id": "72164d22-512a-42d7-b487-483742b7be02",
                 "resourcePath": "rooms\\MainMenu\\MainMenu.yy",
                 "resourceType": "GMRoom"
             }
@@ -1367,6 +1391,14 @@
             }
         },
         {
+            "Key": "c95e00e1-2a9b-4110-8add-a2e3c7720684",
+            "Value": {
+                "id": "47f1aa57-99ea-4e37-9ea5-e2961393c03b",
+                "resourcePath": "views\\c95e00e1-2a9b-4110-8add-a2e3c7720684.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cb4b56cd-3ce6-4d7a-960b-de59302c41c1",
             "Value": {
                 "id": "fdf68f99-9d16-4717-972d-0f07d596e49e",
@@ -1500,6 +1532,14 @@
                 "id": "a92f8fd1-7e54-4410-8ee7-b389dec078f8",
                 "resourcePath": "sounds\\sfx_conf\\sfx_conf.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e380c208-8ae8-4a36-a4d4-9f42ae860615",
+            "Value": {
+                "id": "6e47bdd5-5c6f-4f28-ab5f-30bf34af6116",
+                "resourcePath": "sprites\\spr_EarthPunch\\spr_EarthPunch.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

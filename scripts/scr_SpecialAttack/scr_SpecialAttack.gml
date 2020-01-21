@@ -125,21 +125,45 @@ if(instance_exists(obj_Player)) {
 		case Wizards.earth:
 			// Create the earth specials
 			
-			
-			if(attack1 && obj_Player.grounded){
+			// earth armor special
+			if(attack1 && obj_Player.grounded && !obj_Player.testSwitch){
 				if(obj_Player.mana >= obj_Player.earthSpecialCost){
 					obj_Player.mana -= obj_Player.earthSpecialCost;
 					obj_Player.haveEarthArmor = true;
 				}
 			}
 			
-			
-			else if(attack2 && obj_Player.grounded){
+			// earth spike special
+			else if(attack2 && obj_Player.grounded && !obj_Player.testSwitch){
 				if(obj_Player.mana >= obj_Player.earthSpecialCost){
 					obj_Player.mana -= obj_Player.earthSpecialCost;
 					instance_create_layer(x + (35 * obj_Player.facing), y + 45, layer, obj_EarthSpike);
 				}
 			}
+			
+			
+			// earth punch Special
+			else if(obj_Player.attack1 && obj_Player.grounded && obj_Player.testSwitch){
+				
+				if(obj_Player.mana >= obj_Player.earthSpecialCost){
+					obj_Player.mana -= obj_Player.earthSpecialCost;
+					
+					obj_Player.velocity_x += 15;
+					instance_create_layer(x, y, layer, obj_EarthPunch);
+				}
+			}
+			
+			// tipi Special
+			else if(obj_Player.attack1 && obj_Player.grounded && obj_Player.testSwitch){
+				
+				if(obj_Player.mana >= obj_Player.earthSpecialCost){
+					obj_Player.mana -= obj_Player.earthSpecialCost;
+					instance_create_layer(x, y, layer, obj_FlameLance);
+				}
+			}
+			
+			
+			
 			break;
 			
 			

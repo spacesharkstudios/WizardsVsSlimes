@@ -26,10 +26,10 @@ if(velocity_x != 0){
 
 // Jump
 if(grounded && input_jump && can_move){
-	velocity_y = -9.2;
+	velocity_y = jump_force;
 }
 if(!grounded && canAirJump && numAirJumps && input_jump && can_move){ // Air wizard only
-	velocity_y = -9.2;
+	velocity_y = jump_force * .75;
 	numAirJumps --;
 }
 
@@ -106,7 +106,7 @@ if(haveEarthArmor && (earthArmor <= 0)){
 
 
 // fire buff special code
-if(fireBuff){
+if(fireBuff && state == Wizards.fire){
 	hitpoints -=.1;
 	firePassive = 3;
 	attack_damage = 10;
@@ -143,7 +143,7 @@ if(velocity_x != 0 && (grounded || landing)){
 	sprite_index = spr_player_attack;
 }
 
-if(instance_place(x,y,obj_EarthSpike)){
+if(place_meeting(x, y + velocity_y, obj_EarthSpike)){
 	grounded = false;
 }
 
