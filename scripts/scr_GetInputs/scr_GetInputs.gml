@@ -11,17 +11,17 @@ input_change1 = keyboard_check_pressed(global.controls[? "change1"]);
 input_change2 = keyboard_check_pressed(global.controls[? "change2"]);
 input_change3 = keyboard_check_pressed(global.controls[? "change3"]);
 input_change4 = keyboard_check_pressed(global.controls[? "change4"]);
-input_attack = keyboard_check_pressed(ord("I"));
+input_attack = keyboard_check_pressed(global.controls[? "attack"]);
 
 switchButton = keyboard_check_pressed(ord("T"));
 
-input_specialAttack1 = keyboard_check_pressed(ord("O"));
+input_specialAttack1 = keyboard_check_pressed(global.controls[? "special1"]);
 
 if(obj_Player.testSwitch && (obj_Player.state == Wizards.fire)){
-	input_specialAttack2 = keyboard_check(ord("P"));
+	input_specialAttack2 = keyboard_check(global.controls[? "special2"]);
 }
 else{
-	input_specialAttack2 = keyboard_check_pressed(ord("P"));
+	input_specialAttack2 = keyboard_check_pressed(global.controls[? "special2"]);
 }
 
 
