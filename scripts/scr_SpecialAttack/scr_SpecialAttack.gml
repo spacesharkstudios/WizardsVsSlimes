@@ -39,7 +39,7 @@ if(instance_exists(obj_Player)) {
 			 //flamethrower special
 			else if(attack2 && obj_Player.testSwitch){
 				if(obj_Player.mana >= obj_Player.fireSpecialCost){
-					obj_Player.mana -= obj_Player.fireSpecialCost;
+					obj_Player.mana -= obj_Player.fireSpecialCost * .3;
 					
 					if(!instance_exists(obj_Flamethrower)){
 						instance_create_layer(x, y, layer, obj_Flamethrower);

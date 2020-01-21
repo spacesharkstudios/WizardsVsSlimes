@@ -22,5 +22,15 @@ if(instance_exists(obj_Player)){
 		instance_destroy();
 	}
 	
+	#region particles
+	part_type_speed(global.Flamethrower_Particles, .5, 2, -.001, 0);
 	
+	if(facing == 1){
+		part_type_direction(global.Flamethrower_Particles, -10, 10, 0, 3);
+	} else if(facing == -1){
+		part_type_direction(global.Flamethrower_Particles, 180 - 10, 180 + 10, 0, 3);
+	}
+	
+	part_particles_create(global.Player_Particles, x, y, global.Flamethrower_Particles, 5);
+	#endregion
 }
