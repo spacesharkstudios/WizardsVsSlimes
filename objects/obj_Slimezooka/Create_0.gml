@@ -15,7 +15,7 @@ manaValue = 25;
 
 animate_attack = false;
 
-hitpoints = 20;
+hitpoints = 200;
 
 state_switch = false;
 alarm[5] = irandom(240);

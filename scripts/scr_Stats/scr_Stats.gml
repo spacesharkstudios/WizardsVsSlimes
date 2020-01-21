@@ -17,7 +17,7 @@ if(instance_exists(obj_Player)){
 			// Set passives for the water player
 			obj_Player.canAirJump = false;
 			obj_Player.spd = 2.4;
-			obj_Player.jump_force = -5.3
+			obj_Player.jump_force = -5.3;
 			obj_Player.attack_damage = 5;
 			obj_Player.attackTimer = 20;
 			obj_Player.attack_offset = 4;

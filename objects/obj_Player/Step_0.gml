@@ -106,7 +106,7 @@ if(haveEarthArmor && (earthArmor <= 0)){
 
 
 // fire buff special code
-if(fireBuff){
+if(fireBuff && state == Wizards.fire){
 	hitpoints -=.1;
 	firePassive = 3;
 	attack_damage = 10;
@@ -144,7 +144,9 @@ if(velocity_x != 0 && (grounded || landing)){
 	sprite_index = spr_player_attack;
 }
 
-
+if(place_meeting(x, y + velocity_y, obj_EarthSpike)){
+	grounded = false;
+}
 
 // Change the color of the wizard
 rowIndex = state;

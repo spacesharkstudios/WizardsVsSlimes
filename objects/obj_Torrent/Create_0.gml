@@ -1,4 +1,4 @@
-spd = 10;
+spd = 15;
 playerFacing = 1;
 
 

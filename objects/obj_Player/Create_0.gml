@@ -34,9 +34,13 @@ flamethrowerDamage = 5;
 flamethowerActive = false;
 fireBuff = false;
 
+// water damage values
+torrentDamage = 15;
+
 // special earth values
 haveEarthArmor = false;
 earthArmor = 60;
+earthPunchDamage = 10;
 
 // special air values
 dashActivate = false;
